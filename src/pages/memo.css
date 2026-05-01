@@ -25,7 +25,7 @@
 }
 
 /* Make the page background match outside the centered column */
-html, body { background: #0A0A0A; }
+html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none; text-align: left; }
 
 .memo-root *, .memo-root *::before, .memo-root *::after {
   box-sizing: border-box;
