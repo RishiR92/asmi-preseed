@@ -537,70 +537,123 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 
 /* ─────────────────────────────────────────
-   RESPONSIVE — tablet
+   RESPONSIVE — tablet & phone
    ───────────────────────────────────────── */
 @media (max-width: 760px) {
-  .header { padding: 40px 28px 36px; }
-  .hero-line { font-size: 40px; }
-  .hero-sub { font-size: 14px; }
-  .body { padding: 0 28px 64px; }
-  .bottom-bar { padding: 20px 28px; }
+  .header { padding: 44px 28px 40px; }
+  .hero-line { font-size: 44px; }
+  .hero-sub { font-size: 15.5px; line-height: 1.7; }
+  .body { padding: 0 28px 72px; }
+  .bottom-bar {
+    padding: 22px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .bottom-right { text-align: left; }
 
   .traction-bar { grid-template-columns: 1fr 1fr; }
-  .traction-cell { padding: 22px 24px; }
+  .traction-cell { padding: 26px 22px; }
   .traction-cell:nth-child(2) { border-right: none; }
   .traction-cell:nth-child(1),
   .traction-cell:nth-child(2) { border-bottom: 1px solid var(--border); }
-  .traction-num { font-size: 32px; }
+  .traction-num { font-size: 44px; }
+  .traction-label { font-size: 11px; }
 
-  .section { padding-top: 44px; }
-  .section h2 { font-size: 26px; }
+  .section { padding-top: 56px; }
+  .section h2 { font-size: 30px; }
+  .section-lead { font-size: 15.5px; line-height: 1.75; }
+
   .thesis { padding: 28px 24px; }
-  .thesis p { font-size: 18px; }
+  .thesis p { font-size: 21px; }
 
   .why-now-grid { grid-template-columns: 1fr; }
+  .why-title { font-size: 16px; }
+  .why-body { font-size: 15px; line-height: 1.7; }
 
   .truth-row { grid-template-columns: 1fr; }
   .truth-label { border-right: none; border-bottom: 1px solid var(--border); }
+  .truth-title { font-size: 16px; }
+  .truth-body { font-size: 15px; line-height: 1.7; padding: 22px 24px; }
 
   .stories { grid-template-columns: 1fr; }
+  .story h3 { font-size: 22px; }
+  .story p { font-size: 15px; line-height: 1.7; }
 
   .network { padding: 28px 24px; }
   .network-flow { gap: 8px; }
-  .nf-step { font-size: 11px; padding: 6px 10px; white-space: normal; }
-  .network-stat { font-size: 17px; }
+  .nf-step { font-size: 13px; padding: 8px 12px; white-space: normal; }
+  .network-stat { font-size: 20px; }
 
   .market-row { grid-template-columns: 1fr; }
-  .market-size { font-size: 34px; }
-  .market-size--small { font-size: 24px; }
+  .market-cell { padding: 28px 22px; }
+  .market-size { font-size: 46px; }
+  .market-size--small { font-size: 28px; }
+  .market-desc { font-size: 11px; }
+  .market-note { font-size: 14.5px; line-height: 1.6; }
 
-  .moat-item { padding: 20px 22px; gap: 14px; }
+  .moat-item { padding: 22px 22px; gap: 16px; }
+  .moat-num { font-size: 13px; }
+  .moat-title { font-size: 16px; }
+  .moat-body { font-size: 15px; line-height: 1.7; }
 
   .team-grid { grid-template-columns: 1fr; }
+  .team-name { font-size: 28px; }
+  .cred { font-size: 14px; line-height: 1.5; }
 
   .closed-block,
   .ask-block {
     grid-template-columns: 1fr;
     gap: 24px;
-    padding: 28px 24px;
+    padding: 32px 24px;
   }
   .closed-amount { text-align: left; }
-  .closed-num { font-size: 32px; }
-  .ask-amounts { flex-direction: row; align-items: center; gap: 16px; }
-  .ask-amounts .divider-line { width: 1px; height: 40px; }
+  .closed-headline { font-size: 22px; }
+  .closed-body { font-size: 14.5px; }
+  .closed-num { font-size: 44px; }
+  .ask-block h3 { font-size: 24px; }
+  .ask-block p { font-size: 14.5px; }
+  .ask-amounts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
   .ask-item { text-align: left; }
-  .ask-block h3 { font-size: 22px; }
+  .ask-num { font-size: 34px; }
+  .ask-amounts .divider-line { width: 100%; height: 1px; }
 }
 
 /* ── small phones ── */
 @media (max-width: 420px) {
-  .header { padding: 32px 20px 28px; }
-  .hero-line { font-size: 34px; }
-  .body { padding: 0 20px 56px; }
-  .bottom-bar { padding: 18px 20px; }
-  .traction-bar { grid-template-columns: 1fr; }
-  .traction-cell { border-right: none; border-bottom: 1px solid var(--border); }
-  .traction-cell:last-child { border-bottom: none; }
-  .section h2 { font-size: 23px; }
+  .header { padding: 36px 18px 32px; }
+  .hero-line { font-size: 38px; }
+  .body { padding: 0 18px 60px; }
+  .bottom-bar { padding: 20px 18px; }
+
+  /* keep traction as 2×2, override any earlier 1-col rule */
+  .traction-bar { grid-template-columns: 1fr 1fr; }
+  .traction-cell {
+    padding: 22px 18px;
+    border-right: 1px solid var(--border);
+    border-bottom: none;
+  }
+  .traction-cell:nth-child(2) { border-right: none; }
+  .traction-cell:nth-child(1),
+  .traction-cell:nth-child(2) { border-bottom: 1px solid var(--border); }
+  .traction-cell:nth-child(4) { border-right: none; }
+  .traction-num { font-size: 36px; }
+
+  .section h2 { font-size: 24px; }
   .header-top { gap: 16px; }
+
+  .thesis { padding: 24px 20px; }
+  .thesis p { font-size: 19px; }
+
+  .market-size { font-size: 38px; }
+  .market-size--small { font-size: 24px; }
+  .closed-num { font-size: 36px; }
+  .ask-num { font-size: 30px; }
+
+  .team-name { font-size: 24px; }
+  .story h3 { font-size: 20px; }
 }
