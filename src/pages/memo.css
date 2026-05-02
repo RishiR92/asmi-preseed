@@ -224,9 +224,9 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   margin-bottom: 10px;
 }
 .founder-tag {
-  font-size: 13.5px;
+  font-size: 16px;
   color: var(--text-mid);
-  line-height: 1.5;
+  line-height: 1.55;
   font-style: italic;
 }
 .founder-stats {
