@@ -107,11 +107,11 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="fstat">
-                  <div className="fstat-val">Forbes</div>
+                  <div className="fstat-val">500+</div>
                   <div className="fstat-label">
-                    30 Under 30 Asia
+                    People hired across Asia
                     <br />
-                    Second-time founder
+                    Forbes 30 Under 30 Asia
                   </div>
                 </div>
               </div>
@@ -512,8 +512,8 @@ const Index = () => {
                   consumer at the frontier.
                 </div>
                 <div className="round-body">
-                  Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders from top
-                  AI labs. Signal from people who know what great AI products and consumer
+                  Firm led by Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders
+                  from top AI labs. Signal from people who know what great AI products and consumer
                   distribution actually looks like.
                 </div>
               </div>
