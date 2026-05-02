@@ -585,10 +585,10 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   margin-bottom: 10px;
 }
 .round-body {
-  font-size: 16px;
+  font-size: 17px;
   color: var(--text-mid);
   line-height: 1.7;
-  max-width: 480px;
+  max-width: 520px;
 }
 .round-num-block { text-align: right; flex-shrink: 0; }
 .round-num {
