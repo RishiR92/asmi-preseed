@@ -822,11 +822,11 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .founder-row { grid-template-columns: 260px 1fr; }
   .founder-id { padding: 38px 32px; }
   .founder-name { font-size: 38px; }
-  .founder-tag { font-size: 12.5px; }
-  .founder-role { font-size: 10px; }
+  .founder-tag { font-size: 15px; }
+  .founder-role { font-size: 11px; }
   .fstat { padding: 28px 24px; min-height: 140px; }
   .fstat-val { font-size: 26px; }
-  .fstat-label { font-size: 10.5px; }
+  .fstat-label { font-size: 12px; }
   .backer-row { padding: 26px 32px; }
   .backer-pill { font-size: 11px; padding: 5px 13px; }
   .backer-label { font-size: 10px; }
