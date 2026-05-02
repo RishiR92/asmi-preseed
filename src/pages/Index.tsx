@@ -512,8 +512,8 @@ const Index = () => {
                   consumer at the frontier.
                 </div>
                 <div className="round-body">
-                  Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders from top
-                  AI labs. Signal from people who know what great AI products and consumer
+                  Firm led by Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders
+                  from top AI labs. Signal from people who know what great AI products and consumer
                   distribution actually looks like.
                 </div>
               </div>
