@@ -1,6 +1,5 @@
-/* Asmi Investor Memo — responsive port of the original HTML.
-   Uses raw CSS variables (not the shadcn token system) to preserve the
-   exact dark editorial aesthetic of the source memo. */
+/* Asmi Investor Memo v3 — responsive port of the source HTML.
+   Raw CSS variables to preserve exact dark editorial aesthetic. */
 
 .memo-root {
   --bg: #0A0A0A;
@@ -12,8 +11,12 @@
   --text-mid: #9A9590;
   --text-dim: #555250;
   --accent: #E8512A;
+  --accent-dim: rgba(232,81,42,0.12);
+  --accent-glow: rgba(232,81,42,0.06);
   --green: #2ECC8A;
-  --green-dim: rgba(46, 204, 138, 0.1);
+  --green-dim: rgba(46,204,138,0.1);
+  --gold: #D4A843;
+  --gold-dim: rgba(212,168,67,0.12);
 
   font-family: 'Syne', sans-serif;
   background: var(--bg);
@@ -24,12 +27,9 @@
   min-height: 100vh;
 }
 
-/* Make the page background match outside the centered column */
 html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none; text-align: left; }
 
-.memo-root *, .memo-root *::before, .memo-root *::after {
-  box-sizing: border-box;
-}
+.memo-root *, .memo-root *::before, .memo-root *::after { box-sizing: border-box; }
 
 /* ── HEADER ── */
 .header {
@@ -42,8 +42,8 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   content: '';
   position: absolute;
   top: -120px; right: -80px;
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(232,81,42,0.08) 0%, transparent 70%);
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(232,81,42,0.07) 0%, transparent 70%);
   pointer-events: none;
 }
 .header-top {
@@ -71,12 +71,12 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .hero-line {
   font-family: 'Instrument Serif', serif;
-  font-size: 52px;
+  font-size: 54px;
   font-weight: 400;
-  line-height: 1.08;
+  line-height: 1.07;
   letter-spacing: -0.02em;
   color: var(--text);
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   max-width: 680px;
   position: relative;
 }
@@ -141,7 +141,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 .body { padding: 0 64px 80px; }
 
 /* ── SECTION ── */
-.section { padding-top: 56px; }
+.section { padding-top: 60px; }
 .section-tag {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
@@ -162,19 +162,131 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .section h2 {
   font-family: 'Instrument Serif', serif;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 1.2;
   color: var(--text);
   margin: 0 0 6px;
 }
 .section h2 em.accent-em { font-style: italic; color: var(--accent); }
+.section h2 em.gold-em { font-style: italic; color: var(--gold); }
 .section-lead {
   font-size: 14px;
   color: var(--text-mid);
   line-height: 1.75;
   max-width: 620px;
   margin: 12px 0 0;
+}
+
+/* ── TEAM (founder rows) ── */
+.team-wrap {
+  margin-top: 28px;
+  border: 1px solid var(--border2);
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+.team-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--gold) 100%);
+}
+.founder-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  border-bottom: 1px solid var(--border);
+}
+.founder-row.last { border-bottom: none; }
+.founder-id {
+  padding: 32px 28px;
+  background: var(--bg);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+.founder-role {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.founder-name {
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.founder-tag {
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.5;
+  font-style: italic;
+}
+.founder-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+}
+.fstat {
+  background: var(--surface);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+.fstat-val {
+  font-family: 'Instrument Serif', serif;
+  font-size: 22px;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.fstat-val.accent { color: var(--accent); }
+.fstat-val.gold { color: var(--gold); }
+.fstat-val.green { color: var(--green); }
+.fstat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.backer-row {
+  padding: 22px 28px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+.backer-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+.backer-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.backer-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--gold);
+  background: var(--gold-dim);
+  border: 1px solid rgba(212,168,67,0.2);
+  padding: 4px 11px;
+  border-radius: 2px;
+  letter-spacing: 0.06em;
 }
 
 /* ── THESIS BLOCK ── */
@@ -202,6 +314,55 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .thesis p strong { font-style: normal; color: var(--accent); font-weight: 400; }
 
+/* ── EARNED SECRET ── */
+.earned-secret {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-left: 3px solid var(--gold);
+  padding: 32px 40px;
+  margin-top: 28px;
+}
+.earned-secret-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.earned-secret p {
+  font-family: 'Instrument Serif', serif;
+  font-size: 19px;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.65;
+  margin: 0;
+}
+.earned-secret p strong { font-style: normal; color: var(--text); }
+.earned-secret-data {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+}
+.esd-cell { background: var(--bg); padding: 16px 20px; }
+.esd-num {
+  font-family: 'Instrument Serif', serif;
+  font-size: 28px;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.esd-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
 /* ── WHY NOW ── */
 .why-now-grid {
   display: grid;
@@ -218,13 +379,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   letter-spacing: 0.1em;
   margin-bottom: 12px;
 }
-.why-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 8px;
-  line-height: 1.3;
-}
+.why-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.3; }
 .why-body { font-size: 13px; color: var(--text-mid); line-height: 1.65; }
 
 /* ── PRODUCT TRUTH ── */
@@ -255,12 +410,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   margin-bottom: 6px;
 }
 .truth-title { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.3; }
-.truth-body {
-  padding: 22px 28px;
-  font-size: 13.5px;
-  color: var(--text-mid);
-  line-height: 1.7;
-}
+.truth-body { padding: 22px 28px; font-size: 13.5px; color: var(--text-mid); line-height: 1.7; }
 .truth-body strong { color: var(--text); font-weight: 600; }
 
 /* ── STORY CARDS ── */
@@ -372,7 +522,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .moat-item {
   background: var(--bg);
-  padding: 20px 28px;
+  padding: 22px 28px;
   display: flex;
   gap: 20px;
   align-items: flex-start;
@@ -388,135 +538,92 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 .moat-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
 .moat-body { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
 
-/* ── TEAM ── */
-.team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
+/* ── THE ROUND ── */
+.round-block {
   margin-top: 28px;
-  background: var(--border);
-}
-.team-cell { background: var(--bg); padding: 28px; }
-.team-role {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 8px;
-}
-.team-name {
-  font-family: 'Instrument Serif', serif;
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.team-creds { display: flex; flex-direction: column; gap: 5px; }
-.cred {
-  font-size: 12px;
-  color: var(--text-mid);
-  line-height: 1.4;
-  display: flex;
-  gap: 8px;
-}
-.cred::before { content: '–'; color: var(--accent); flex-shrink: 0; }
-
-/* ── THE ASK ── */
-.closed-block {
-  background: var(--surface);
   border: 1px solid var(--border2);
-  padding: 28px 32px;
-  margin-top: 28px;
-  margin-bottom: 1px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 32px;
-  align-items: center;
-}
-.closed-tag {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  margin-bottom: 10px;
-}
-.closed-headline {
-  font-family: 'Instrument Serif', serif;
-  font-size: 20px;
-  color: var(--text);
-  margin-bottom: 8px;
-}
-.closed-body { font-size: 13px; color: var(--text-mid); line-height: 1.65; }
-.closed-amount { text-align: right; flex-shrink: 0; }
-.closed-num {
-  font-family: 'Instrument Serif', serif;
-  font-size: 36px;
-  color: var(--green);
-  line-height: 1;
-  margin-bottom: 4px;
-}
-.closed-desc {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.ask-block {
   background: var(--surface);
-  border: 1px solid var(--border2);
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 40px;
-  padding: 40px;
   position: relative;
   overflow: hidden;
 }
-.ask-block::after {
+.round-block::after {
   content: '';
   position: absolute;
-  bottom: -60px; right: -60px;
-  width: 200px; height: 200px;
-  background: radial-gradient(circle, rgba(232,81,42,0.07) 0%, transparent 70%);
+  bottom: -80px; right: -80px;
+  width: 240px; height: 240px;
+  background: radial-gradient(circle, rgba(46,204,138,0.06) 0%, transparent 70%);
   pointer-events: none;
 }
-.ask-block h3 {
-  font-family: 'Instrument Serif', serif;
-  font-size: 26px;
-  font-style: italic;
-  color: var(--text);
-  margin: 0 0 10px;
-  line-height: 1.3;
-  font-weight: 400;
+.round-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  padding: 36px 40px;
+  border-bottom: 1px solid var(--border);
 }
-.ask-block p { font-size: 13px; color: var(--text-mid); line-height: 1.7; margin: 0; }
-.ask-fine { margin-top: 12px !important; font-size: 12px !important; color: var(--text-dim) !important; }
-.ask-amounts {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex-shrink: 0;
-  position: relative;
+.round-closed-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: var(--green-dim);
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin-bottom: 14px;
 }
-.ask-item { text-align: right; }
-.ask-num {
+.round-headline {
   font-family: 'Instrument Serif', serif;
   font-size: 28px;
+  font-style: italic;
   color: var(--text);
-  line-height: 1;
-  margin-bottom: 2px;
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
-.ask-desc {
+.round-body {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.7;
+  max-width: 480px;
+}
+.round-num-block { text-align: right; flex-shrink: 0; }
+.round-num {
+  font-family: 'Instrument Serif', serif;
+  font-size: 44px;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.round-cap {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  line-height: 1.7;
 }
-.divider-line { width: 100%; height: 1px; background: var(--border); }
+.round-goal {
+  padding: 24px 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  position: relative;
+}
+.round-goal-text { font-size: 13px; color: var(--text-mid); line-height: 1.7; }
+.round-goal-text strong { color: var(--text); font-weight: 600; }
+.round-terms {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: right;
+  line-height: 1.9;
+  flex-shrink: 0;
+}
 
 /* ── BOTTOM BAR ── */
 .bottom-bar {
@@ -564,8 +671,28 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .section h2 { font-size: 30px; }
   .section-lead { font-size: 15.5px; line-height: 1.75; }
 
+  /* TEAM mobile — stack id above stats; stats become 2×2 */
+  .founder-row { grid-template-columns: 1fr; }
+  .founder-id {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 26px 24px;
+  }
+  .founder-name { font-size: 30px; }
+  .founder-tag { font-size: 12.5px; }
+  .founder-stats { grid-template-columns: 1fr 1fr; }
+  .fstat { padding: 22px 18px; min-height: 110px; }
+  .fstat-val { font-size: 20px; }
+  .fstat-label { font-size: 10.5px; }
+  .backer-row { padding: 20px 24px; }
+
   .thesis { padding: 28px 24px; }
   .thesis p { font-size: 21px; }
+
+  .earned-secret { padding: 26px 24px; }
+  .earned-secret p { font-size: 18px; }
+  .esd-num { font-size: 32px; }
+  .esd-label { font-size: 11px; }
 
   .why-now-grid { grid-template-columns: 1fr; }
   .why-title { font-size: 16px; }
@@ -597,30 +724,24 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .moat-title { font-size: 16px; }
   .moat-body { font-size: 15px; line-height: 1.7; }
 
-  .team-grid { grid-template-columns: 1fr; }
-  .team-name { font-size: 28px; }
-  .cred { font-size: 14px; line-height: 1.5; }
-
-  .closed-block,
-  .ask-block {
+  /* ROUND — stack */
+  .round-top {
     grid-template-columns: 1fr;
     gap: 24px;
-    padding: 32px 24px;
-  }
-  .closed-amount { text-align: left; }
-  .closed-headline { font-size: 22px; }
-  .closed-body { font-size: 14.5px; }
-  .closed-num { font-size: 44px; }
-  .ask-block h3 { font-size: 24px; }
-  .ask-block p { font-size: 14.5px; }
-  .ask-amounts {
-    flex-direction: column;
+    padding: 28px 24px;
     align-items: flex-start;
-    gap: 16px;
   }
-  .ask-item { text-align: left; }
-  .ask-num { font-size: 34px; }
-  .ask-amounts .divider-line { width: 100%; height: 1px; }
+  .round-num-block { text-align: left; }
+  .round-headline { font-size: 24px; }
+  .round-body { font-size: 14.5px; }
+  .round-num { font-size: 48px; }
+  .round-goal {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 24px 24px;
+  }
+  .round-terms { text-align: left; }
+  .round-goal-text { font-size: 14.5px; }
 }
 
 /* ── small phones ── */
@@ -630,7 +751,6 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .body { padding: 0 18px 60px; }
   .bottom-bar { padding: 20px 18px; }
 
-  /* keep traction as 2×2, override any earlier 1-col rule */
   .traction-bar { grid-template-columns: 1fr 1fr; }
   .traction-cell {
     padding: 22px 18px;
@@ -646,14 +766,28 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .section h2 { font-size: 24px; }
   .header-top { gap: 16px; }
 
+  .founder-id { padding: 22px 18px; }
+  .founder-name { font-size: 26px; }
+  .fstat { padding: 18px 14px; min-height: 100px; }
+  .fstat-val { font-size: 17px; }
+  .fstat-label { font-size: 9.5px; }
+  .backer-row { padding: 18px 18px; }
+
   .thesis { padding: 24px 20px; }
   .thesis p { font-size: 19px; }
 
+  .earned-secret { padding: 22px 20px; }
+  .earned-secret p { font-size: 16.5px; }
+  .esd-cell { padding: 14px 16px; }
+  .esd-num { font-size: 26px; }
+
   .market-size { font-size: 38px; }
   .market-size--small { font-size: 24px; }
-  .closed-num { font-size: 36px; }
-  .ask-num { font-size: 30px; }
 
-  .team-name { font-size: 24px; }
+  .round-top { padding: 24px 20px; }
+  .round-goal { padding: 22px 20px; }
+  .round-headline { font-size: 22px; }
+  .round-num { font-size: 40px; }
+
   .story h3 { font-size: 20px; }
 }

@@ -7,7 +7,11 @@ const Index = () => {
       <header className="header">
         <div className="header-top">
           <div className="wordmark">Asmi</div>
-          <div className="memo-label">April 2026</div>
+          <div className="memo-label">
+            Investor Memo
+            <br />
+            May 2026
+          </div>
         </div>
         <h1 className="hero-line">
           AI that handles your personal chores
@@ -17,13 +21,14 @@ const Index = () => {
         <p className="hero-sub">
           Voice-first AI that makes real-world calls on your behalf — books appointments,
           negotiates quotes, resolves issues — while you get on with your day. No app. No typing.
+          No follow-up.
         </p>
       </header>
 
       {/* TRACTION BAR */}
       <section className="traction-bar" aria-label="Traction">
         <div className="traction-cell live">
-          <div className="traction-num">1,000</div>
+          <div className="traction-num">500</div>
           <div className="traction-label">
             Active users
             <br />
@@ -40,7 +45,7 @@ const Index = () => {
           </div>
         </div>
         <div className="traction-cell">
-          <div className="traction-num">0</div>
+          <div className="traction-num">$0</div>
           <div className="traction-label">
             Paid acquisition
             <br />
@@ -58,6 +63,124 @@ const Index = () => {
       </section>
 
       <div className="body">
+        {/* TEAM */}
+        <section className="section">
+          <div className="section-tag">The team</div>
+          <h2>
+            Great at both. Distribution
+            <br />
+            <em className="accent-em">and</em> product execution.
+          </h2>
+
+          <div className="team-wrap">
+            {/* RISHI */}
+            <div className="founder-row">
+              <div className="founder-id">
+                <div className="founder-role">Co-Founder · CEO</div>
+                <div className="founder-name">Rishi</div>
+                <div className="founder-tag">
+                  Built in one of the world's toughest consumer markets.
+                </div>
+              </div>
+              <div className="founder-stats">
+                <div className="fstat">
+                  <div className="fstat-val accent">Asia's Largest</div>
+                  <div className="fstat-label">
+                    Appliances platform
+                    <br />
+                    built &amp; scaled
+                  </div>
+                </div>
+                <div className="fstat">
+                  <div className="fstat-val">600M+</div>
+                  <div className="fstat-label">
+                    Consumers reached
+                    <br />
+                    across Asia
+                  </div>
+                </div>
+                <div className="fstat">
+                  <div className="fstat-val gold">~$100M</div>
+                  <div className="fstat-label">
+                    Raised from SoftBank,
+                    <br />
+                    Intel CEO, DoorDash &amp; Zoom founders
+                  </div>
+                </div>
+                <div className="fstat">
+                  <div className="fstat-val">Forbes</div>
+                  <div className="fstat-label">
+                    30 Under 30 Asia
+                    <br />
+                    Second-time founder
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* SATWIK */}
+            <div className="founder-row last">
+              <div className="founder-id">
+                <div className="founder-role">Co-Founder · CTO</div>
+                <div className="founder-name">Satwik</div>
+                <div className="founder-tag">
+                  One of the top AI researchers in agentic systems.
+                </div>
+              </div>
+              <div className="founder-stats">
+                <div className="fstat">
+                  <div className="fstat-val accent">40+</div>
+                  <div className="fstat-label">
+                    Highly cited papers
+                    <br />
+                    on large action models
+                  </div>
+                </div>
+                <div className="fstat">
+                  <div className="fstat-val">
+                    FAIR &amp;<br />DeepMind
+                  </div>
+                  <div className="fstat-label">
+                    Frontier AI research
+                    <br />
+                    at Meta &amp; Google
+                  </div>
+                </div>
+                <div className="fstat">
+                  <div className="fstat-val gold">
+                    Meta<br />Glasses
+                  </div>
+                  <div className="fstat-label">
+                    Consumer-grade agentic
+                    <br />
+                    infra built at scale
+                  </div>
+                </div>
+                <div className="fstat">
+                  <div className="fstat-val green">CMU PhD</div>
+                  <div className="fstat-label">
+                    Agentic AI
+                    <br />
+                    IIT Bombay → CMU
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="backer-row">
+              <div className="backer-label">Previously backed by</div>
+              <div className="backer-names">
+                <div className="backer-pill">SoftBank</div>
+                <div className="backer-pill">Intel Capital</div>
+                <div className="backer-pill">DoorDash Founders</div>
+                <div className="backer-pill">Zoom Founders</div>
+                <div className="backer-pill">FAIR / Meta AI</div>
+                <div className="backer-pill">DeepMind</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* THESIS */}
         <section className="section">
           <div className="section-tag">The thesis</div>
@@ -73,7 +196,7 @@ const Index = () => {
               chasing, booking — and no AI has solved it.
             </p>
             <p style={{ marginTop: 20 }}>
-              <strong>Asmi does.</strong> It calls places. It calls people. It gets chores done in
+              <strong>Asmi does.</strong> It calls places. It calls people. It gets things done in
               the real world while you go about your day.
             </p>
           </div>
@@ -231,6 +354,45 @@ const Index = () => {
           </div>
         </section>
 
+        {/* EARNED SECRET */}
+        <section className="section">
+          <div className="section-tag">What we learned</div>
+          <h2>
+            We assumed users would initiate.
+            <br />
+            <em className="gold-em">We were wrong.</em>
+          </h2>
+          <div className="earned-secret">
+            <div className="earned-secret-label">The earned insight</div>
+            <p>
+              Every AI assistant is designed for the moment you open the app. We discovered the
+              highest-intent moment is <strong>before you open anything</strong> — when you're
+              overwhelmed and life is moving. Users who receive a proactive morning call retain at
+              significantly higher rates than users who initiate.{" "}
+              <strong>The behavior that drives retention is being called, not calling.</strong> No
+              other AI product is built around this. It rewrote our entire product thesis.
+            </p>
+            <div className="earned-secret-data">
+              <div className="esd-cell">
+                <div className="esd-num">40%+</div>
+                <div className="esd-label">
+                  Day-7 retention
+                  <br />
+                  proactive-call users
+                </div>
+              </div>
+              <div className="esd-cell">
+                <div className="esd-num">25%</div>
+                <div className="esd-label">
+                  Consumer app
+                  <br />
+                  average (benchmark)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* NETWORK MECHANIC */}
         <section className="section">
           <div className="section-tag">Distribution mechanic</div>
@@ -248,9 +410,9 @@ const Index = () => {
               <div className="nf-step">CPA calls their contacts</div>
             </div>
             <div className="network-stat">
-              We spent <strong>$0 on acquisition</strong> to get from 50 users to 1,000. Growth came
-              entirely from Asmi making calls. Every task is a distribution event. No consumer AI
-              product has this mechanic.
+              We spent <strong>$0 on acquisition</strong> to reach 500 users. Growth came entirely
+              from Asmi making calls. Every task is a distribution event. No consumer AI product
+              has this mechanic.
             </div>
           </div>
         </section>
@@ -325,7 +487,7 @@ const Index = () => {
               {
                 n: "03",
                 t: "Physical world execution is architecturally hard to clone",
-                b: "Proactive outbound calling, real-time IVR navigation, multilingual voice, and autonomous follow-up require a specialised infrastructure that chat-first competitors cannot bolt on. Every other AI assistant stops at generating text. Asmi stops at a confirmed booking.",
+                b: "Proactive outbound calling, real-time IVR navigation, multilingual voice, and autonomous follow-up require specialised infrastructure that chat-first competitors cannot bolt on. Every other AI assistant stops at generating text. Asmi stops at a confirmed booking.",
               },
               {
                 n: "04",
@@ -344,81 +506,51 @@ const Index = () => {
           </div>
         </section>
 
-        {/* TEAM */}
-        <section className="section">
-          <div className="section-tag">The team</div>
-          <h2>Done this before. At 600M users.</h2>
-          <div className="team-grid">
-            <div className="team-cell">
-              <div className="team-role">Co-Founder · CEO</div>
-              <div className="team-name">Rishi</div>
-              <div className="team-creds">
-                <div className="cred">Second-time founder — co-founded Arzooo, scaled to $400M revenue</div>
-                <div className="cred">Raised $100M from SoftBank, Intel CEO, founders of DoorDash &amp; Zoom</div>
-                <div className="cred">600M+ consumers scaled across Asia</div>
-                <div className="cred">Forbes 30 Under 30 Asia</div>
-              </div>
-            </div>
-            <div className="team-cell">
-              <div className="team-role">Co-Founder · CTO</div>
-              <div className="team-name">Satwik</div>
-              <div className="team-creds">
-                <div className="cred">IIT Bombay → CMU PhD in Agentic AI</div>
-                <div className="cred">Former researcher at FAIR (Meta AI) and DeepMind</div>
-                <div className="cred">Built agentic infrastructure for Meta glasses</div>
-                <div className="cred">40+ highly cited papers on large action models</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* THE ASK */}
+        {/* THE ROUND */}
         <section className="section">
           <div className="section-tag">The round</div>
-          <h2>$1M round. $300k already committed.</h2>
+          <h2>$300k raised. $25M cap.</h2>
 
-          <div className="closed-block">
-            <div>
-              <div className="closed-tag">Pre-seed · Closed</div>
-              <div className="closed-headline">$300k raised at $25M cap.</div>
-              <div className="closed-body">
-                Led by a firm whose GP is Jack Brody — CPO at Suno AI, former Chief Product Officer
-                at Snap — alongside founders from top AI labs. Signal from people who've built and
-                scaled consumer products at the frontier.
+          <div className="round-block">
+            <div className="round-top">
+              <div>
+                <div className="round-closed-label">● Pre-seed · Closed</div>
+                <div className="round-headline">
+                  Led by people who've built
+                  <br />
+                  consumer at the frontier.
+                </div>
+                <div className="round-body">
+                  Jack Brody (CPO at Suno AI, former Chief Product Officer at Snap / Mana Ventures)
+                  — alongside founders from You.com, Yutori, and Axiom Math. Signal from people who
+                  know what consumer distribution actually looks like.
+                </div>
+              </div>
+              <div className="round-num-block">
+                <div className="round-num">$300k</div>
+                <div className="round-cap">
+                  Closed · SAFE
+                  <br />
+                  $25M val cap
+                  <br />
+                  No discount
+                </div>
               </div>
             </div>
-            <div className="closed-amount">
-              <div className="closed-num">$300k</div>
-              <div className="closed-desc">
-                Closed · SAFE
-                <br />
-                $25M val cap
-              </div>
-            </div>
-          </div>
 
-          <div className="ask-block">
-            <div>
-              <h3>
-                Adding $700k to close.
-                <br />
-                Goal: 50,000 users.
-              </h3>
-              <p>
-                One objective: get to 50,000 active users and prove the network loop compounds at
-                scale. That's the signal that unlocks the seed. US public launch, India in Q4.
-              </p>
-              <p className="ask-fine">SAFE · $25M cap · No discount · Closing now</p>
-            </div>
-            <div className="ask-amounts">
-              <div className="ask-item">
-                <div className="ask-num">$700k</div>
-                <div className="ask-desc">Closing now</div>
+            <div className="round-goal">
+              <div className="round-goal-text">
+                One objective: get to <strong>50,000 active users</strong> and prove the network
+                loop compounds at scale. That's the signal that unlocks the seed.{" "}
+                <strong>US public launch now. India in Q4</strong> — where a phone-first,
+                multilingual AI assistant isn't a novelty, it's the only interface that works.
               </div>
-              <div className="divider-line" />
-              <div className="ask-item">
-                <div className="ask-num">$25M</div>
-                <div className="ask-desc">Valuation cap</div>
+              <div className="round-terms">
+                SAFE · $25M cap
+                <br />
+                No discount
+                <br />
+                Closing now
               </div>
             </div>
           </div>
@@ -428,7 +560,11 @@ const Index = () => {
       {/* BOTTOM BAR */}
       <footer className="bottom-bar">
         <div className="bottom-left">Asmi</div>
-        <div className="bottom-right">April 2026</div>
+        <div className="bottom-right">
+          May 2026 · Humint Labs, Inc.
+          <br />
+          Sunnyvale, CA · Delaware Corp
+        </div>
       </footer>
     </main>
   );
