@@ -158,7 +158,7 @@ const Index = () => {
                 <div className="fstat">
                 <div className="fstat-val green">CMU PhD</div>
                   <div className="fstat-label">
-                    Best PhD Thesis Award on LAMs
+                    Best PhD Thesis Award
                     <br />
                     IIT Bombay → CMU
                   </div>
@@ -173,7 +173,7 @@ const Index = () => {
                 <div className="backer-pill">Intel CEO</div>
                 <div className="backer-pill">Doordash Founder</div>
                 <div className="backer-pill">Zoom Founder</div>
-                <div className="backer-pill">5 Decacorn Consumer Founders</div>
+                <div className="backer-pill">Biggest Consumer Founders from US, India, Middle East, Europe</div>
               </div>
             </div>
           </div>
@@ -306,6 +306,30 @@ const Index = () => {
           </div>
         </section>
 
+        {/* NETWORK MECHANIC */}
+        <section className="section">
+          <div className="section-tag">Distribution mechanic</div>
+          <h2>The product spreads itself.</h2>
+          <div className="network">
+            <div className="network-flow">
+              <div className="nf-step">User gives task</div>
+              <div className="nf-arrow">→</div>
+              <div className="nf-step">Asmi calls their CPA</div>
+              <div className="nf-arrow">→</div>
+              <div className="nf-step">CPA asks "what is this?"</div>
+              <div className="nf-arrow">→</div>
+              <div className="nf-step">CPA becomes a user</div>
+              <div className="nf-arrow">→</div>
+              <div className="nf-step">CPA calls their contacts</div>
+            </div>
+            <div className="network-stat">
+              We spent <strong>$0 on acquisition</strong> to reach 500 users. Growth came entirely
+              from Asmi making calls. Every call Asmi makes is a distribution event. No consumer AI
+              product has unlocked this mechanic.
+            </div>
+          </div>
+        </section>
+
         {/* BETA STORIES */}
         <section className="section">
           <div className="section-tag">Beta proof · this happened</div>
@@ -389,30 +413,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* NETWORK MECHANIC */}
-        <section className="section">
-          <div className="section-tag">Distribution mechanic</div>
-          <h2>The product spreads itself.</h2>
-          <div className="network">
-            <div className="network-flow">
-              <div className="nf-step">User gives task</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">Asmi calls their CPA</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">CPA asks "what is this?"</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">CPA becomes a user</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">CPA calls their contacts</div>
-            </div>
-            <div className="network-stat">
-              We spent <strong>$0 on acquisition</strong> to reach 500 users. Growth came entirely
-              from Asmi making calls. Every call Asmi makes is a distribution event. No consumer AI
-              product has unlocked this mechanic.
-            </div>
-          </div>
-        </section>
-
         {/* MARKET */}
         <section className="section">
           <div className="section-tag">Market</div>
@@ -483,7 +483,7 @@ const Index = () => {
               {
                 n: "03",
                 t: "Physical world execution is architecturally hard to clone",
-                b: "Proactive outbound calling, real-time IVR navigation, multilingual voice, and autonomous follow-up require specialised infrastructure that chat-first competitors cannot bolt on. Every other AI assistant stops at generating text. Asmi stops at a confirmed booking.",
+                b: "Negotiations, real-time IVR navigation, executing multi-step tasks over a call in the background, and understanding user conversation style require specialised infrastructure that chat-first competitors cannot bolt on. Every other AI assistant stops at generating text. Asmi stops at a confirmed booking.",
               },
               {
                 n: "04",
@@ -517,9 +517,9 @@ const Index = () => {
                   consumer at the frontier.
                 </div>
                 <div className="round-body">
-                  Jack Brody (CPO at Suno AI, former Chief Product Officer at Snap / Mana Ventures)
-                  — alongside founders from You.com, Yutori, and Axiom Math. Signal from people who
-                  know what consumer distribution actually looks like.
+                  Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders from top
+                  AI labs. Signal from people who know what great AI products and consumer
+                  distribution actually looks like.
                 </div>
               </div>
               <div className="round-num-block">
@@ -538,15 +538,7 @@ const Index = () => {
               <div className="round-goal-text">
                 One objective: get to <strong>50,000 active users</strong> and prove the network
                 loop compounds at scale. That's the signal that unlocks the seed.{" "}
-                <strong>US public launch now. India in Q4</strong> — where a phone-first,
-                multilingual AI assistant isn't a novelty, it's the only interface that works.
-              </div>
-              <div className="round-terms">
-                SAFE · $25M cap
-                <br />
-                No discount
-                <br />
-                Closing now
+                <strong>US public launch now. India in Q4.</strong>
               </div>
             </div>
           </div>
@@ -556,11 +548,6 @@ const Index = () => {
       {/* BOTTOM BAR */}
       <footer className="bottom-bar">
         <div className="bottom-left">Asmi</div>
-        <div className="bottom-right">
-          May 2026 · Humint Labs, Inc.
-          <br />
-          Sunnyvale, CA · Delaware Corp
-        </div>
       </footer>
     </main>
   );
