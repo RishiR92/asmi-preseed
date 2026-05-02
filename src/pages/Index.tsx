@@ -306,6 +306,30 @@ const Index = () => {
           </div>
         </section>
 
+        {/* NETWORK MECHANIC */}
+        <section className="section">
+          <div className="section-tag">Distribution mechanic</div>
+          <h2>The product spreads itself.</h2>
+          <div className="network">
+            <div className="network-flow">
+              <div className="nf-step">User gives task</div>
+              <div className="nf-arrow">→</div>
+              <div className="nf-step">Asmi calls their CPA</div>
+              <div className="nf-arrow">→</div>
+              <div className="nf-step">CPA asks "what is this?"</div>
+              <div className="nf-arrow">→</div>
+              <div className="nf-step">CPA becomes a user</div>
+              <div className="nf-arrow">→</div>
+              <div className="nf-step">CPA calls their contacts</div>
+            </div>
+            <div className="network-stat">
+              We spent <strong>$0 on acquisition</strong> to reach 500 users. Growth came entirely
+              from Asmi making calls. Every call Asmi makes is a distribution event. No consumer AI
+              product has unlocked this mechanic.
+            </div>
+          </div>
+        </section>
+
         {/* BETA STORIES */}
         <section className="section">
           <div className="section-tag">Beta proof · this happened</div>
@@ -385,30 +409,6 @@ const Index = () => {
                   average (benchmark)
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* NETWORK MECHANIC */}
-        <section className="section">
-          <div className="section-tag">Distribution mechanic</div>
-          <h2>The product spreads itself.</h2>
-          <div className="network">
-            <div className="network-flow">
-              <div className="nf-step">User gives task</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">Asmi calls their CPA</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">CPA asks "what is this?"</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">CPA becomes a user</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">CPA calls their contacts</div>
-            </div>
-            <div className="network-stat">
-              We spent <strong>$0 on acquisition</strong> to reach 500 users. Growth came entirely
-              from Asmi making calls. Every call Asmi makes is a distribution event. No consumer AI
-              product has unlocked this mechanic.
             </div>
           </div>
         </section>
