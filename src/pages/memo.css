@@ -8,8 +8,8 @@
   --border: #242424;
   --border2: #2E2E2E;
   --text: #F0EDE8;
-  --text-mid: #DAD6D1;
-  --text-dim: #B5B0AB;
+  --text-mid: #E4E0DB;
+  --text-dim: #C8C3BE;
   --accent: #E8512A;
   --accent-dim: rgba(232,81,42,0.12);
   --accent-glow: rgba(232,81,42,0.06);
@@ -145,11 +145,12 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 .section { padding-top: 60px; }
 .section-tag {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.2em;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -223,9 +224,9 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   margin-bottom: 10px;
 }
 .founder-tag {
-  font-size: 13.5px;
+  font-size: 16px;
   color: var(--text-mid);
-  line-height: 1.5;
+  line-height: 1.55;
   font-style: italic;
 }
 .founder-stats {
@@ -254,11 +255,11 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 .fstat-val.green { color: var(--green); }
 .fstat-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9.5px;
+  font-size: 11.5px;
   color: var(--text-dim);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  line-height: 1.5;
+  letter-spacing: 0.08em;
+  line-height: 1.55;
 }
 
 .backer-row {
@@ -530,14 +531,14 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .moat-num {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   color: var(--accent);
   flex-shrink: 0;
   margin-top: 2px;
-  min-width: 24px;
+  min-width: 28px;
 }
-.moat-title { font-size: 17px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
-.moat-body { font-size: 16px; color: var(--text-mid); line-height: 1.6; }
+.moat-title { font-size: 19px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.moat-body { font-size: 17px; color: var(--text-mid); line-height: 1.65; }
 
 /* ── THE ROUND ── */
 .round-block {
@@ -584,10 +585,10 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   margin-bottom: 10px;
 }
 .round-body {
-  font-size: 16px;
+  font-size: 17px;
   color: var(--text-mid);
   line-height: 1.7;
-  max-width: 480px;
+  max-width: 520px;
 }
 .round-num-block { text-align: right; flex-shrink: 0; }
 .round-num {
@@ -599,7 +600,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .round-cap {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 11.5px;
   color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -613,7 +614,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   align-items: center;
   position: relative;
 }
-.round-goal-text { font-size: 16px; color: var(--text-mid); line-height: 1.7; }
+.round-goal-text { font-size: 17px; color: var(--text-mid); line-height: 1.7; }
 .round-goal-text strong { color: var(--text); font-weight: 600; }
 .round-terms {
   font-family: 'JetBrains Mono', monospace;
@@ -814,18 +815,18 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 
   .section { padding-top: 80px; }
   .section h2 { font-size: 48px; }
-  .section-tag { font-size: 11px; margin-bottom: 18px; }
+  .section-tag { font-size: 13px; margin-bottom: 20px; letter-spacing: 0.24em; }
   .section-lead { font-size: 16px; max-width: 720px; }
 
   /* Team */
   .founder-row { grid-template-columns: 260px 1fr; }
   .founder-id { padding: 38px 32px; }
   .founder-name { font-size: 38px; }
-  .founder-tag { font-size: 12.5px; }
-  .founder-role { font-size: 10px; }
+  .founder-tag { font-size: 15px; }
+  .founder-role { font-size: 11px; }
   .fstat { padding: 28px 24px; min-height: 140px; }
   .fstat-val { font-size: 26px; }
-  .fstat-label { font-size: 10.5px; }
+  .fstat-label { font-size: 12px; }
   .backer-row { padding: 26px 32px; }
   .backer-pill { font-size: 11px; padding: 5px 13px; }
   .backer-label { font-size: 10px; }
@@ -876,19 +877,19 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 
   /* Moat */
   .moat-item { padding: 28px 36px; gap: 24px; }
-  .moat-num { font-size: 12px; min-width: 28px; }
-  .moat-title { font-size: 17px; margin-bottom: 6px; }
-  .moat-body { font-size: 15.5px; line-height: 1.7; }
+  .moat-num { font-size: 14px; min-width: 32px; }
+  .moat-title { font-size: 20px; margin-bottom: 8px; }
+  .moat-body { font-size: 17px; line-height: 1.7; }
 
   /* Round */
   .round-top { padding: 44px 52px; }
   .round-headline { font-size: 34px; }
-  .round-body { font-size: 15.5px; max-width: 580px; line-height: 1.7; }
+  .round-body { font-size: 17.5px; max-width: 600px; line-height: 1.7; }
   .round-num { font-size: 56px; }
-  .round-cap { font-size: 11px; }
-  .round-closed-label { font-size: 10px; }
+  .round-cap { font-size: 12.5px; }
+  .round-closed-label { font-size: 11px; }
   .round-goal { padding: 28px 52px; }
-  .round-goal-text { font-size: 15.5px; line-height: 1.7; }
+  .round-goal-text { font-size: 17.5px; line-height: 1.7; }
   .round-terms { font-size: 11px; }
 }
 
@@ -930,6 +931,6 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .founder-name { font-size: 46px; }
   .fstat-val { font-size: 30px; }
   .round-num { font-size: 72px; }
-  .moat-body, .why-body, .truth-body, .story p, .round-body, .round-goal-text { font-size: 16.5px; }
+  .moat-body, .why-body, .truth-body, .story p, .round-body, .round-goal-text { font-size: 18px; }
   .market-note { font-size: 15.5px; }
 }
