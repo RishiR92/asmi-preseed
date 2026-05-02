@@ -20,8 +20,7 @@ const Index = () => {
         </h1>
         <p className="hero-sub">
           Voice-first AI that makes real-world calls on your behalf — books appointments,
-          negotiates quotes, resolves issues — while you get on with your day. No app. No typing.
-          No follow-up.
+          negotiates quotes, resolves issues — while you get on with your day. No app. No chatbot.
         </p>
       </header>
 
@@ -157,9 +156,9 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="fstat">
-                  <div className="fstat-val green">CMU PhD</div>
+                <div className="fstat-val green">CMU PhD</div>
                   <div className="fstat-label">
-                    Agentic AI
+                    Best PhD Thesis Award on LAMs
                     <br />
                     IIT Bombay → CMU
                   </div>
@@ -170,12 +169,11 @@ const Index = () => {
             <div className="backer-row">
               <div className="backer-label">Previously backed by</div>
               <div className="backer-names">
-                <div className="backer-pill">SoftBank</div>
-                <div className="backer-pill">Intel Capital</div>
-                <div className="backer-pill">DoorDash Founders</div>
-                <div className="backer-pill">Zoom Founders</div>
-                <div className="backer-pill">FAIR / Meta AI</div>
-                <div className="backer-pill">DeepMind</div>
+                <div className="backer-pill">SBI (Softbank)</div>
+                <div className="backer-pill">Intel CEO</div>
+                <div className="backer-pill">Doordash Founder</div>
+                <div className="backer-pill">Zoom Founder</div>
+                <div className="backer-pill">5 Decacorn Consumer Founders</div>
               </div>
             </div>
           </div>
@@ -229,9 +227,9 @@ const Index = () => {
               <div className="why-num">03</div>
               <div className="why-title">Physical world execution is completely unclaimed</div>
               <div className="why-body">
-                ChatGPT owns research. Perplexity owns search. Nobody owns getting things done in
-                the physical world — calling, booking, negotiating. The highest-value job in AI is
-                wide open.
+                ChatGPT owns research. AI Assistants solving digital admin is still WIP. Nobody
+                owns getting things done in the physical world — calling, booking, negotiating. The
+                highest-value job in AI is wide open.
               </div>
             </div>
           </div>
@@ -255,8 +253,8 @@ const Index = () => {
                 body: (
                   <>
                     No app download. No account creation. A phone number is the entire onboarding.
-                    First interaction completes in under 3 minutes. This is the zero-friction entry
-                    that every prior voice product missed.
+                    First interaction completes in under 30 sec followed by first call with Asmi.
+                    This is the zero-friction entry that every consumer product missed.
                   </>
                 ),
               },
@@ -321,7 +319,7 @@ const Index = () => {
                 suppliers, collected quotes across sizes, recommended the best option, and placed
                 the order once confirmed.
               </p>
-              <div className="story-result">→ No tab opened. He just talked.</div>
+              <div className="story-result">→ No apps opened. He just talked.</div>
             </article>
             <article className="story">
               <div className="story-tag">Emergency home repair</div>
@@ -345,9 +343,9 @@ const Index = () => {
               <div className="story-tag">IVR / billing dispute</div>
               <h3>$47 charge. Carrier called. Charge reversed.</h3>
               <p>
-                User noticed an unexpected $47 charge on their phone bill. Told Asmi on their
-                morning call. Asmi called the carrier, navigated the IVR, waited on hold, disputed
-                the charge with a rep, and got it reversed.
+                User noticed an unexpected $47 charge on their phone bill. Called Asmi to resolve
+                this. Asmi called the carrier, navigated the IVR, waited on hold, disputed the
+                charge with a rep, and got it reversed.
               </p>
               <div className="story-result">→ User found out over iMessage an hour later.</div>
             </article>
@@ -368,9 +366,7 @@ const Index = () => {
               Every AI assistant is designed for the moment you open the app. We discovered the
               highest-intent moment is <strong>before you open anything</strong> — when you're
               overwhelmed and life is moving. Users who receive a proactive morning call retain at
-              significantly higher rates than users who initiate.{" "}
-              <strong>The behavior that drives retention is being called, not calling.</strong> No
-              other AI product is built around this. It rewrote our entire product thesis.
+              significantly higher rates than users who initiate. <strong>Eureka!</strong>
             </p>
             <div className="earned-secret-data">
               <div className="esd-cell">
@@ -411,8 +407,8 @@ const Index = () => {
             </div>
             <div className="network-stat">
               We spent <strong>$0 on acquisition</strong> to reach 500 users. Growth came entirely
-              from Asmi making calls. Every task is a distribution event. No consumer AI product
-              has this mechanic.
+              from Asmi making calls. Every call Asmi makes is a distribution event. No consumer AI
+              product has unlocked this mechanic.
             </div>
           </div>
         </section>
@@ -420,7 +416,7 @@ const Index = () => {
         {/* MARKET */}
         <section className="section">
           <div className="section-tag">Market</div>
-          <h2>The executor category doesn't exist yet. We're building it.</h2>
+          <h2>The physical world executor category doesn't exist yet. We're building it.</h2>
           <div className="market-row">
             <div className="market-cell">
               <div className="market-size">$400B</div>
@@ -450,9 +446,9 @@ const Index = () => {
             </div>
             <div className="market-cell">
               <div className="market-size market-size--small">
-                Zero direct
+                Strong
                 <br />
-                competition
+                wedge
               </div>
               <div className="market-desc" style={{ marginTop: 10 }}>
                 Physical world AI
@@ -476,13 +472,13 @@ const Index = () => {
             {[
               {
                 n: "01",
-                t: "Persistent personal context",
-                b: "Asmi builds a deep contextual model of each user across daily calls — preferences, relationships, recurring tasks, communication style. This context cannot be replicated overnight by a competitor who doesn't have the call history.",
+                t: "Phone call as the acquisition channel",
+                b: "Every outbound call Asmi makes on a user's behalf is a free acquisition touchpoint. As the network scales, CAC approaches zero. This mechanic inverts the unit economics of every consumer app.",
               },
               {
                 n: "02",
-                t: "Phone call as the acquisition channel",
-                b: "Every outbound call Asmi makes on a user's behalf is a free acquisition touchpoint. As the network scales, CAC approaches zero. This mechanic inverts the unit economics of every consumer app.",
+                t: "Persistent personal context",
+                b: "Asmi builds a deep contextual model of each user across daily calls — preferences, relationships, recurring tasks, communication style. This context cannot be replicated overnight by a competitor who doesn't have the call history.",
               },
               {
                 n: "03",
