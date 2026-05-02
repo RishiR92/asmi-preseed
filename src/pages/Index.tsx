@@ -173,7 +173,7 @@ const Index = () => {
                 <div className="backer-pill">Intel CEO</div>
                 <div className="backer-pill">Doordash Founder</div>
                 <div className="backer-pill">Zoom Founder</div>
-                <div className="backer-pill">Biggest Consumer Founders from US, India, Middle East, Europe</div>
+                <div className="backer-pill">5 Decacorn Consumer Founders</div>
               </div>
             </div>
           </div>
