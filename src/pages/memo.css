@@ -172,7 +172,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 .section h2 em.accent-em { font-style: italic; color: var(--accent); }
 .section h2 em.gold-em { font-style: italic; color: var(--gold); }
 .section-lead {
-  font-size: 14px;
+  font-size: 17px;
   color: var(--text-mid);
   line-height: 1.75;
   max-width: 620px;
