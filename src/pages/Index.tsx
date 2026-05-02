@@ -538,15 +538,7 @@ const Index = () => {
               <div className="round-goal-text">
                 One objective: get to <strong>50,000 active users</strong> and prove the network
                 loop compounds at scale. That's the signal that unlocks the seed.{" "}
-                <strong>US public launch now. India in Q4</strong> — where a phone-first,
-                multilingual AI assistant isn't a novelty, it's the only interface that works.
-              </div>
-              <div className="round-terms">
-                SAFE · $25M cap
-                <br />
-                No discount
-                <br />
-                Closing now
+                <strong>US public launch now. India in Q4.</strong>
               </div>
             </div>
           </div>
