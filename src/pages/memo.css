@@ -410,8 +410,8 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   color: var(--text-dim);
   margin-bottom: 6px;
 }
-.truth-title { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.3; }
-.truth-body { padding: 22px 28px; font-size: 13.5px; color: var(--text-mid); line-height: 1.7; }
+.truth-title { font-size: 16px; font-weight: 600; color: var(--text); line-height: 1.3; }
+.truth-body { padding: 22px 28px; font-size: 16px; color: var(--text-mid); line-height: 1.7; }
 .truth-body strong { color: var(--text); font-weight: 600; }
 
 /* ── STORY CARDS ── */
