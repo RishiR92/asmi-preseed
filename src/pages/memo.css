@@ -877,19 +877,19 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 
   /* Moat */
   .moat-item { padding: 28px 36px; gap: 24px; }
-  .moat-num { font-size: 12px; min-width: 28px; }
-  .moat-title { font-size: 17px; margin-bottom: 6px; }
-  .moat-body { font-size: 15.5px; line-height: 1.7; }
+  .moat-num { font-size: 14px; min-width: 32px; }
+  .moat-title { font-size: 20px; margin-bottom: 8px; }
+  .moat-body { font-size: 17px; line-height: 1.7; }
 
   /* Round */
   .round-top { padding: 44px 52px; }
   .round-headline { font-size: 34px; }
-  .round-body { font-size: 15.5px; max-width: 580px; line-height: 1.7; }
+  .round-body { font-size: 17.5px; max-width: 600px; line-height: 1.7; }
   .round-num { font-size: 56px; }
-  .round-cap { font-size: 11px; }
-  .round-closed-label { font-size: 10px; }
+  .round-cap { font-size: 12.5px; }
+  .round-closed-label { font-size: 11px; }
   .round-goal { padding: 28px 52px; }
-  .round-goal-text { font-size: 15.5px; line-height: 1.7; }
+  .round-goal-text { font-size: 17.5px; line-height: 1.7; }
   .round-terms { font-size: 11px; }
 }
 
