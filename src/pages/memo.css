@@ -930,5 +930,6 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .founder-name { font-size: 46px; }
   .fstat-val { font-size: 30px; }
   .round-num { font-size: 72px; }
-  .moat-body, .why-body, .truth-body, .story p { font-size: 15.5px; }
+  .moat-body, .why-body, .truth-body, .story p, .round-body, .round-goal-text { font-size: 16.5px; }
+  .market-note { font-size: 15.5px; }
 }
