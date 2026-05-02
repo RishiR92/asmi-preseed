@@ -145,11 +145,12 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 .section { padding-top: 60px; }
 .section-tag {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.2em;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 12px;
