@@ -845,50 +845,50 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   /* Why now */
   .why-cell { padding: 34px 30px; }
   .why-num { font-size: 11px; }
-  .why-title { font-size: 17px; margin-bottom: 10px; }
-  .why-body { font-size: 14.5px; line-height: 1.7; }
+  .why-title { font-size: 18px; margin-bottom: 10px; }
+  .why-body { font-size: 15.5px; line-height: 1.7; }
 
   /* Product truth */
   .truth-row { grid-template-columns: 260px 1fr; }
   .truth-label { padding: 28px 30px; }
   .truth-tag { font-size: 11px; }
-  .truth-title { font-size: 15px; }
-  .truth-body { padding: 28px 36px; font-size: 15px; line-height: 1.75; }
+  .truth-title { font-size: 16px; }
+  .truth-body { padding: 28px 36px; font-size: 16px; line-height: 1.75; }
 
   /* Stories */
   .story { padding: 34px 34px 30px; }
   .story-tag { font-size: 10px; }
   .story h3 { font-size: 22px; }
-  .story p { font-size: 14.5px; line-height: 1.7; }
-  .story-result { font-size: 12px; margin-top: 18px; }
+  .story p { font-size: 15.5px; line-height: 1.7; }
+  .story-result { font-size: 12.5px; margin-top: 18px; }
 
   /* Network */
   .network { padding: 44px 48px; }
-  .nf-step { font-size: 13px; padding: 10px 16px; }
+  .nf-step { font-size: 13.5px; padding: 10px 16px; }
   .network-stat { font-size: 24px; }
 
   /* Market */
   .market-cell { padding: 36px 32px; }
   .market-size { font-size: 56px; }
   .market-size--small { font-size: 36px; }
-  .market-desc { font-size: 11px; }
-  .market-note { font-size: 13.5px; line-height: 1.6; }
+  .market-desc { font-size: 11.5px; }
+  .market-note { font-size: 14.5px; line-height: 1.65; }
 
   /* Moat */
   .moat-item { padding: 28px 36px; gap: 24px; }
   .moat-num { font-size: 12px; min-width: 28px; }
-  .moat-title { font-size: 16px; margin-bottom: 6px; }
-  .moat-body { font-size: 14.5px; line-height: 1.7; }
+  .moat-title { font-size: 17px; margin-bottom: 6px; }
+  .moat-body { font-size: 15.5px; line-height: 1.7; }
 
   /* Round */
   .round-top { padding: 44px 52px; }
   .round-headline { font-size: 34px; }
-  .round-body { font-size: 14.5px; max-width: 560px; }
+  .round-body { font-size: 15.5px; max-width: 580px; line-height: 1.7; }
   .round-num { font-size: 56px; }
   .round-cap { font-size: 11px; }
   .round-closed-label { font-size: 10px; }
   .round-goal { padding: 28px 52px; }
-  .round-goal-text { font-size: 14.5px; }
+  .round-goal-text { font-size: 15.5px; line-height: 1.7; }
   .round-terms { font-size: 11px; }
 }
 
@@ -930,5 +930,6 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .founder-name { font-size: 46px; }
   .fstat-val { font-size: 30px; }
   .round-num { font-size: 72px; }
-  .moat-body, .why-body, .truth-body, .story p { font-size: 15.5px; }
+  .moat-body, .why-body, .truth-body, .story p, .round-body, .round-goal-text { font-size: 16.5px; }
+  .market-note { font-size: 15.5px; }
 }
