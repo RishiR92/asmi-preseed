@@ -271,14 +271,13 @@ const Index = () => {
                 ),
               },
               {
-                tag: "Moat",
-                title: "Calls to people are the acquisition channel",
+                tag: "Availability",
+                title: "Available where people already are",
                 body: (
                   <>
-                    When Asmi calls your CPA on your behalf, your CPA hears an AI working for
-                    someone they know. They ask: "What is this? How do I get it?"{" "}
-                    <strong>The product action is the acquisition event.</strong> This is
-                    structurally unlike any consumer AI product today.
+                    Asmi calls you every morning. You can call Asmi any time something comes up.
+                    Or text it on WhatsApp or iMessage mid-day. Same intelligence, same context,
+                    every surface. <strong>The power is being there wherever the moment happens.</strong>
                   </>
                 ),
               },
