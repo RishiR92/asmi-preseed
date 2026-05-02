@@ -158,7 +158,7 @@ const Index = () => {
                 <div className="fstat">
                 <div className="fstat-val green">CMU PhD</div>
                   <div className="fstat-label">
-                    Best PhD Thesis Award on LAMs
+                    Best PhD Thesis Award
                     <br />
                     IIT Bombay → CMU
                   </div>
@@ -173,7 +173,7 @@ const Index = () => {
                 <div className="backer-pill">Intel CEO</div>
                 <div className="backer-pill">Doordash Founder</div>
                 <div className="backer-pill">Zoom Founder</div>
-                <div className="backer-pill">5 Decacorn Consumer Founders</div>
+                <div className="backer-pill">Biggest Consumer Founders from US, India, Middle East, Europe</div>
               </div>
             </div>
           </div>
@@ -483,7 +483,7 @@ const Index = () => {
               {
                 n: "03",
                 t: "Physical world execution is architecturally hard to clone",
-                b: "Proactive outbound calling, real-time IVR navigation, multilingual voice, and autonomous follow-up require specialised infrastructure that chat-first competitors cannot bolt on. Every other AI assistant stops at generating text. Asmi stops at a confirmed booking.",
+                b: "Negotiations, real-time IVR navigation, executing multi-step tasks over a call in the background, and understanding user conversation style require specialised infrastructure that chat-first competitors cannot bolt on. Every other AI assistant stops at generating text. Asmi stops at a confirmed booking.",
               },
               {
                 n: "04",
@@ -517,9 +517,9 @@ const Index = () => {
                   consumer at the frontier.
                 </div>
                 <div className="round-body">
-                  Jack Brody (CPO at Suno AI, former Chief Product Officer at Snap / Mana Ventures)
-                  — alongside founders from You.com, Yutori, and Axiom Math. Signal from people who
-                  know what consumer distribution actually looks like.
+                  Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders from top
+                  AI labs. Signal from people who know what great AI products and consumer
+                  distribution actually looks like.
                 </div>
               </div>
               <div className="round-num-block">
