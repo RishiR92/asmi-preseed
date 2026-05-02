@@ -27,11 +27,11 @@ const Index = () => {
       {/* TRACTION BAR */}
       <section className="traction-bar" aria-label="Traction">
         <div className="traction-cell live">
-          <div className="traction-num">500</div>
+          <div className="traction-num">2,000+</div>
           <div className="traction-label">
-            Active users
+            Real-world tasks
             <br />
-            in private beta
+            executed
           </div>
           <div className="delta">↑ organic only</div>
         </div>
@@ -322,7 +322,7 @@ const Index = () => {
               <div className="nf-step">CPA calls their contacts</div>
             </div>
             <div className="network-stat">
-              We spent <strong>$0 on acquisition</strong> to reach 500 users. Growth came entirely
+              We spent <strong>$0 on user acquisition</strong>. Growth came entirely
               from Asmi making calls. Every call Asmi makes is a distribution event. No consumer AI
               product has unlocked this mechanic.
             </div>
