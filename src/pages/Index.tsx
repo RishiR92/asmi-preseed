@@ -36,7 +36,7 @@ const Index = () => {
           <div className="delta">↑ organic only</div>
         </div>
         <div className="traction-cell">
-          <div className="traction-num">3,000</div>
+          <div className="traction-num">1,000</div>
           <div className="traction-label">
             On waitlist
             <br />
@@ -78,7 +78,7 @@ const Index = () => {
                 <div className="founder-role">Co-Founder · CEO</div>
                 <div className="founder-name">Rishi</div>
                 <div className="founder-tag">
-                  Built in one of the world's toughest consumer markets.
+                  2x founder. Built in one of the world's toughest consumer markets.
                 </div>
               </div>
               <div className="founder-stats">
@@ -160,7 +160,7 @@ const Index = () => {
                   <div className="fstat-label">
                     Best PhD Thesis Award
                     <br />
-                    IIT Bombay → CMU
+                    International Olympiad medalist
                   </div>
                 </div>
               </div>
@@ -379,9 +379,9 @@ const Index = () => {
         <section className="section">
           <div className="section-tag">What we learned</div>
           <h2>
-            We assumed users would initiate.
+            Everyone assumed users would initiate.
             <br />
-            <em className="gold-em">We were wrong.</em>
+            <em className="gold-em">They were wrong.</em>
           </h2>
           <div className="earned-secret">
             <div className="earned-secret-label">The earned insight</div>
