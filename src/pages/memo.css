@@ -536,8 +536,8 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   margin-top: 2px;
   min-width: 24px;
 }
-.moat-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
-.moat-body { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+.moat-title { font-size: 17px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.moat-body { font-size: 16px; color: var(--text-mid); line-height: 1.6; }
 
 /* ── THE ROUND ── */
 .round-block {
