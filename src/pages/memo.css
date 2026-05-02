@@ -792,3 +792,116 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 
   .story h3 { font-size: 20px; }
 }
+
+/* ─────────────────────────────────────────
+   DESKTOP — use full width, larger type
+   ───────────────────────────────────────── */
+@media (min-width: 980px) {
+  .header { padding: 72px 80px 60px; }
+  .hero-line { font-size: 72px; max-width: 900px; }
+  .hero-sub { font-size: 17px; max-width: 720px; }
+  .wordmark { font-size: 14px; }
+  .memo-label { font-size: 12px; }
+
+  .body { padding: 0 80px 100px; }
+  .bottom-bar { padding: 28px 80px; }
+  .bottom-left { font-size: 20px; }
+  .bottom-right { font-size: 11px; }
+
+  .traction-cell { padding: 36px 40px; }
+  .traction-num { font-size: 52px; }
+  .traction-label { font-size: 11px; }
+
+  .section { padding-top: 80px; }
+  .section h2 { font-size: 48px; }
+  .section-tag { font-size: 11px; margin-bottom: 18px; }
+  .section-lead { font-size: 16px; max-width: 720px; }
+
+  /* Team */
+  .founder-row { grid-template-columns: 260px 1fr; }
+  .founder-id { padding: 38px 32px; }
+  .founder-name { font-size: 38px; }
+  .founder-tag { font-size: 12.5px; }
+  .founder-role { font-size: 10px; }
+  .fstat { padding: 28px 24px; min-height: 140px; }
+  .fstat-val { font-size: 26px; }
+  .fstat-label { font-size: 10.5px; }
+  .backer-row { padding: 26px 32px; }
+  .backer-pill { font-size: 11px; padding: 5px 13px; }
+  .backer-label { font-size: 10px; }
+
+  /* Thesis */
+  .thesis { padding: 44px 52px; }
+  .thesis p { font-size: 26px; line-height: 1.55; }
+
+  /* Earned */
+  .earned-secret { padding: 40px 48px; }
+  .earned-secret p { font-size: 22px; }
+  .earned-secret-label { font-size: 10px; }
+  .esd-cell { padding: 22px 26px; }
+  .esd-num { font-size: 36px; }
+  .esd-label { font-size: 11px; }
+
+  /* Why now */
+  .why-cell { padding: 34px 30px; }
+  .why-num { font-size: 11px; }
+  .why-title { font-size: 17px; margin-bottom: 10px; }
+  .why-body { font-size: 14.5px; line-height: 1.7; }
+
+  /* Product truth */
+  .truth-row { grid-template-columns: 260px 1fr; }
+  .truth-label { padding: 28px 30px; }
+  .truth-tag { font-size: 11px; }
+  .truth-title { font-size: 15px; }
+  .truth-body { padding: 28px 36px; font-size: 15px; line-height: 1.75; }
+
+  /* Stories */
+  .story { padding: 34px 34px 30px; }
+  .story-tag { font-size: 10px; }
+  .story h3 { font-size: 22px; }
+  .story p { font-size: 14.5px; line-height: 1.7; }
+  .story-result { font-size: 12px; margin-top: 18px; }
+
+  /* Network */
+  .network { padding: 44px 48px; }
+  .nf-step { font-size: 13px; padding: 10px 16px; }
+  .network-stat { font-size: 24px; }
+
+  /* Market */
+  .market-cell { padding: 36px 32px; }
+  .market-size { font-size: 56px; }
+  .market-size--small { font-size: 36px; }
+  .market-desc { font-size: 11px; }
+  .market-note { font-size: 13.5px; line-height: 1.6; }
+
+  /* Moat */
+  .moat-item { padding: 28px 36px; gap: 24px; }
+  .moat-num { font-size: 12px; min-width: 28px; }
+  .moat-title { font-size: 16px; margin-bottom: 6px; }
+  .moat-body { font-size: 14.5px; line-height: 1.7; }
+
+  /* Round */
+  .round-top { padding: 44px 52px; }
+  .round-headline { font-size: 34px; }
+  .round-body { font-size: 14.5px; max-width: 560px; }
+  .round-num { font-size: 56px; }
+  .round-cap { font-size: 11px; }
+  .round-closed-label { font-size: 10px; }
+  .round-goal { padding: 28px 52px; }
+  .round-goal-text { font-size: 14.5px; }
+  .round-terms { font-size: 11px; }
+}
+
+@media (min-width: 1280px) {
+  .hero-line { font-size: 84px; }
+  .section h2 { font-size: 56px; }
+  .traction-num { font-size: 60px; }
+  .market-size { font-size: 64px; }
+  .market-size--small { font-size: 40px; }
+  .thesis p { font-size: 28px; }
+  .earned-secret p { font-size: 24px; }
+  .network-stat { font-size: 26px; }
+  .round-num { font-size: 64px; }
+  .founder-name { font-size: 42px; }
+  .fstat-val { font-size: 28px; }
+}
