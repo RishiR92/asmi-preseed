@@ -548,11 +548,6 @@ const Index = () => {
       {/* BOTTOM BAR */}
       <footer className="bottom-bar">
         <div className="bottom-left">Asmi</div>
-        <div className="bottom-right">
-          May 2026 · Humint Labs, Inc.
-          <br />
-          Sunnyvale, CA · Delaware Corp
-        </div>
       </footer>
     </main>
   );
