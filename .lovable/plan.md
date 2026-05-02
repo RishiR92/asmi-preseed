@@ -1,49 +1,54 @@
-## Mobile optimisation pass — typographic hierarchy preserved
+# Investor PDF — exact replica of the website, no page breaks
 
-Goal: make the mobile view feel like the desktop screenshots — clear hierarchy where **section headlines** (Instrument Serif h2s) and **big numbers** ($400B, 3.5B, 1,000, $300k) visibly dominate body text. Desktop layout stays byte-identical; only ≤760px and ≤420px change.
+## Goal
 
-### Issues observed on the current mobile build
-1. Body text is too small (13–15px) for phones.
-2. Traction stats stack into a tall 1- or 2-col list with small numbers — they should read as big proof points.
-3. Section h2s (`.section h2`) shrink to 26px on mobile — barely larger than body. In the desktop reference they tower over the surrounding copy. Same for market sizes ($400B etc.) which look prominent on desktop but get reduced to 34px on mobile.
-4. Story h3s, team names, ask numbers — all flatten to similar weight as body.
-5. Vertical rhythm between sections feels cramped.
+Generate a single-file, high-resolution PDF that looks **identical to the live memo site** — same fonts, colors, spacing, layout — rendered as **one tall continuous page** (no page breaks slicing through content).
 
-### Hierarchy rules to enforce on mobile (from the reference screenshots)
-- **Section h2** (Instrument Serif): always ~1.8–2× body size. Mobile target 30px (24px on tiny phones), body 15.5px.
-- **Big numbers** ($400B, 3.5B, 1,000, $300k, traction nums): always the largest element on screen in their block. Mobile target 44–48px.
-- **Hero line**: largest of all — 44px (38px tiny).
-- **Card titles** (story h3, team name, truth title, why-title, moat-title, ask h3, closed-headline): one clear step above body — ~18–22px serif or 16px bold sans.
-- **Body / leads**: 15.5px, line-height 1.7.
-- **Eyebrows / mono labels**: stay small (10–11px) — they're meta, not content.
+This preserves the editorial dark aesthetic exactly and gives investors something they can email, scroll, and read end-to-end like a long-form deck without slide-by-slide friction.
 
-### Changes (CSS only — `src/pages/memo.css`)
+## Approach
 
-**≤760px (phones + small tablets)**
-- Hero: `.hero-line` 40 → 44px; `.hero-sub` 14 → 15.5px / lh 1.7.
-- Traction bar: keep as 2×2 grid (was 2×2 already); `.traction-num` 32 → 44px; cell padding 22→26px; label 10 → 11px. Remove the small-phone 1-col override.
-- Section: `.section h2` 26 → 30px; `.section-tag` keep 10px; `.section-lead` 14 → 15.5px.
-- Thesis quote: 18 → 21px.
-- Why-now: `.why-title` 14 → 16px; `.why-body` 13 → 15px.
-- Truth: `.truth-title` 13 → 16px; `.truth-body` 13.5 → 15px.
-- Stories: `.story h3` 18 → 22px; `.story p` 13 → 15px.
-- Network: `.nf-step` 11 → 13px; `.network-stat` 17 → 20px.
-- Market (key fix): `.market-size` 34 → **46px**; `.market-size--small` 24 → 28px; `.market-note` 12 → 14.5px; `.market-desc` 10 → 11px.
-- Moat: `.moat-title` 14 → 16px; `.moat-body` 13 → 15px; `.moat-num` 11 → 13px.
-- Team: `.team-name` 22 → 28px; `.cred` 12 → 14px.
-- Closed/ask: `.closed-num` 32 → **44px**; `.closed-headline` 20 → 22px; `.ask-num` desktop value → **34px**; `.ask-block h3` 22 → 24px; bodies 13 → 14.5px. Stack `.ask-amounts` vertically (drop the row override) so each amount reads as a headline.
-- Bottom bar: stack vertically, left-aligned.
-- Increase `.section { padding-top }` 44 → 56px for more rhythm.
+Use headless Chromium (already installed in the sandbox) to render the published site and export it as a single PDF page whose height equals the rendered document height. This is the only way to get a true pixel replica — converting via PPTX or rebuilding in ReportLab would lose the typography and grid fidelity.
 
-**≤420px (small phones)**
-- Override the previous 1-col traction rule — keep it 2×2.
-- `.traction-num` 44 → 36px (so two fit per row cleanly).
-- `.hero-line` 44 → 38px.
-- `.section h2` 30 → 24px.
-- `.market-size` 46 → 38px; `.closed-num` 44 → 36px.
-- Side gutters: header/body/bottom-bar 28 → 18px.
+### Steps
 
-### Out of scope
-- No JSX/content changes in `Index.tsx`.
-- Desktop (>760px) stays byte-identical.
-- No font, color, or component swaps. No new dependencies.
+1. **Add a print-mode tweak to `memo.css`** — a `@media print` block that:
+   - Locks the layout to a fixed desktop width (e.g. 1440px) so the PDF renders at the desktop breakpoint regardless of viewport.
+   - Disables hover/animation effects and removes the radial glow overflow clipping issues.
+   - Ensures backgrounds and colors print (`-webkit-print-color-adjust: exact`).
+
+2. **Write a Node script** (`/tmp/render-memo-pdf.js`) using Chromium's CDP via `puppeteer-core` against the system `/bin/chromium`:
+   - Loads the published URL `https://asmi-preseed.lovable.app`.
+   - Sets viewport to 1440px wide.
+   - Waits for fonts (`document.fonts.ready`) and for all network activity to settle.
+   - Measures `document.documentElement.scrollHeight`.
+   - Calls `page.pdf({ width: '1440px', height: '<measured>px', printBackground: true, pageRanges: '1' })` so the entire site renders as ONE page.
+
+3. **Output** `Asmi_Investor_Memo.pdf` to `/mnt/documents/`.
+
+4. **QA** — convert the PDF to a JPEG (it will be one very tall image), inspect top/middle/bottom crops to confirm:
+   - Fonts loaded (Instrument Serif, JetBrains Mono, Syne)
+   - Colors and section borders intact
+   - No clipped content, no white gaps, no broken grids
+   - Traction bar, team grid, market row, round block all aligned
+
+5. Iterate on the print CSS until the render is clean, then deliver the file with a `<lov-artifact>` tag so you can download it.
+
+## Why this format (vs. PPTX or paginated PDF)
+
+- **Exact replica** — no re-typesetting, no font substitution, no grid drift.
+- **No page breaks** — the request was explicit; section-per-slide pagination would split the team grid, market row, and stories awkwardly. A single tall page scrolls naturally in any PDF viewer.
+- **Crisp at any zoom** — vector text + vector borders, raster only for the radial gradients.
+- **One file, sharable** — no dependency on the live site staying up.
+
+## Deliverable
+
+`Asmi_Investor_Memo.pdf` at `/mnt/documents/`, rendered at 1440px-wide desktop layout, single continuous page, full color, embedded fonts. I'll surface it as a download artifact at the end.
+
+## Out of scope (can add later if you want)
+
+- A second paginated US Letter version for printing.
+- A PPTX section-per-slide variant for in-person pitching.
+- A cover page / table of contents.
+
+Approve and I'll build it.
