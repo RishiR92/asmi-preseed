@@ -30,29 +30,6 @@
 
 html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none; text-align: left; }
 
-/* ── PRINT / PDF EXPORT ── lock to desktop layout, force colors */
-@media print {
-  html, body, #root, .memo-root {
-    background: #0A0A0A !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-  .memo-root {
-    width: 1440px !important;
-    max-width: 1440px !important;
-    margin: 0 !important;
-  }
-  /* Disable any animations */
-  *, *::before, *::after {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-.pdf-mode .memo-root {
-  width: 1440px !important;
-  max-width: 1440px !important;
-}
-
 .memo-root *, .memo-root *::before, .memo-root *::after { box-sizing: border-box; }
 
 /* ── HEADER ── */
