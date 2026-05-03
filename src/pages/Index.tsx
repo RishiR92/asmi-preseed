@@ -192,8 +192,9 @@ const Index = () => {
                   Led by people who've built consumer at the frontier.
                 </div>
                 <div className="round-body">
-                  Firm led by Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders
-                  from top AI labs.
+                  Firm led by Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside Devi
+                  Parikh (Founder Yutori, GenAI Head at Meta) and Shubho (Founder Axiom Math,
+                  PyTorch architect).
                 </div>
               </div>
               <div className="round-num-block">
