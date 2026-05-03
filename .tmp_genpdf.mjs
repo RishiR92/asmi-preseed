@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 const url = 'http://localhost:8080/';
 const out = '/mnt/documents/Asmi_Investor_Memo_v5.pdf';
 const browser = await puppeteer.launch({ executablePath: '/bin/chromium', args: ['--no-sandbox'] });
