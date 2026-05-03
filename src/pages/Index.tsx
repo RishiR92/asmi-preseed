@@ -343,7 +343,7 @@ const Index = () => {
                 suppliers, collected quotes across sizes, recommended the best option, and placed
                 the order once confirmed.
               </p>
-              <div className="story-result">→ No apps opened. He just talked.</div>
+              
             </article>
             <article className="story">
               <div className="story-tag">Emergency home repair</div>
@@ -352,7 +352,7 @@ const Index = () => {
                 User told Asmi about a plumbing emergency. Asmi called five plumbers, negotiated
                 price and timing, and had one confirmed and en route within two hours.
               </p>
-              <div className="story-result">→ Update arrived via iMessage: "He's on his way."</div>
+              
             </article>
             <article className="story">
               <div className="story-tag">Cross-border family care</div>
@@ -361,7 +361,7 @@ const Index = () => {
                 User in SF has Asmi call his elderly mother in Rome twice daily — in Italian —
                 tracking medications and reordering when needed. He gets a summary every evening.
               </p>
-              <div className="story-result">→ Peace of mind across time zones.</div>
+              
             </article>
             <article className="story">
               <div className="story-tag">IVR / billing dispute</div>
@@ -371,7 +371,7 @@ const Index = () => {
                 this. Asmi called the carrier, navigated the IVR, waited on hold, disputed the
                 charge with a rep, and got it reversed.
               </p>
-              <div className="story-result">→ User found out over iMessage an hour later.</div>
+              
             </article>
           </div>
 
@@ -415,7 +415,7 @@ const Index = () => {
               </div>
             </div>
             <div className="market-cell">
-              <div className="market-size">wedge</div>
+              <div className="market-size">Wedge</div>
               <div className="market-desc" style={{ marginTop: 10 }}>
                 Physical world AI
                 <br />
