@@ -237,10 +237,10 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .fstat {
   background: var(--surface);
-  padding: 14px 20px;
+  padding: 14px 20px 14px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .fstat-val {
   font-family: 'Instrument Serif', serif;
