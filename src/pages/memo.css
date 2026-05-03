@@ -202,7 +202,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .founder-row.last { border-bottom: none; }
 .founder-id {
-  padding: 32px 28px;
+  padding: 22px 28px;
   background: var(--bg);
   border-right: 1px solid var(--border);
   display: flex;
