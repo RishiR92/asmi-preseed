@@ -256,7 +256,7 @@ const Index = () => {
             </div>
             <div className="why-cell">
               <div className="why-num">03</div>
-              <div className="why-title">Physical world execution is completely unclaimed</div>
+              <div className="why-title">Physical world execution is unclaimed</div>
               <div className="why-body">
                 ChatGPT owns research. Other Assistants are fighting for the digital admin pie.
                 Nobody owns physical world execution.
