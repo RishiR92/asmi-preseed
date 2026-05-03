@@ -202,7 +202,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .founder-row.last { border-bottom: none; }
 .founder-id {
-  padding: 22px 28px;
+  padding: 14px 28px;
   background: var(--bg);
   border-right: 1px solid var(--border);
   display: flex;
@@ -237,11 +237,11 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .fstat {
   background: var(--surface);
-  padding: 18px 20px;
+  padding: 12px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 92px;
+  min-height: 72px;
 }
 .fstat-val {
   font-family: 'Instrument Serif', serif;

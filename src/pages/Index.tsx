@@ -103,7 +103,7 @@ const Index = () => {
                   <div className="fstat-label">
                     Raised from SoftBank,
                     <br />
-                    Intel CEO, DoorDash &amp; Zoom founders
+                    DoorDash &amp; Zoom founders
                   </div>
                 </div>
                 <div className="fstat">
