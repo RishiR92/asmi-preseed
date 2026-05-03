@@ -207,6 +207,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .founder-role {
   font-family: 'JetBrains Mono', monospace;
