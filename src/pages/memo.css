@@ -202,7 +202,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .founder-row.last { border-bottom: none; }
 .founder-id {
-  padding: 32px 28px;
+  padding: 22px 28px;
   background: var(--bg);
   border-right: 1px solid var(--border);
   display: flex;
@@ -237,11 +237,11 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .fstat {
   background: var(--surface);
-  padding: 24px 20px;
+  padding: 18px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 120px;
+  min-height: 92px;
 }
 .fstat-val {
   font-family: 'Instrument Serif', serif;
@@ -933,4 +933,104 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   .round-num { font-size: 72px; }
   .moat-body, .why-body, .truth-body, .story p, .round-body, .round-goal-text { font-size: 18px; }
   .market-note { font-size: 15.5px; }
+}
+
+/* ── PRODUCT 2x2 GRID ── */
+.product-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+}
+.product-cell {
+  background: var(--bg);
+  padding: 28px 28px;
+}
+.product-cell-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 22px;
+  color: var(--text);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+.product-cell-body {
+  font-size: 16px;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+.product-cell-body strong { color: var(--text); font-weight: 700; }
+
+@media (max-width: 760px) {
+  .product-grid { grid-template-columns: 1fr; }
+  .product-cell { padding: 24px 22px; }
+  .product-cell-title { font-size: 20px; }
+  .product-cell-body { font-size: 15.5px; }
+}
+@media (min-width: 980px) {
+  .product-cell { padding: 34px 32px; }
+  .product-cell-title { font-size: 26px; }
+  .product-cell-body { font-size: 16.5px; line-height: 1.75; }
+}
+
+/* ── LEARNED HIGHLIGHT (replaces earned-secret section) ── */
+.learned-highlight {
+  margin-top: 22px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--gold);
+  background: var(--surface);
+  font-size: 16px;
+  color: var(--text-mid);
+  line-height: 1.65;
+}
+.learned-highlight strong { color: var(--text); font-weight: 700; }
+.learned-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-right: 8px;
+}
+@media (min-width: 980px) {
+  .learned-highlight { font-size: 17px; padding: 22px 28px; }
+}
+
+/* ── COMPACT ROUND ── */
+.round-block.compact .round-top { padding: 24px 28px; }
+.round-block.compact .round-headline { font-size: 22px; margin-bottom: 8px; }
+.round-block.compact .round-body { font-size: 15.5px; line-height: 1.6; }
+.round-block.compact .round-num { font-size: 36px; }
+.round-block.compact .round-cap { font-size: 11px; }
+.round-block.compact .round-goal { padding: 18px 28px; }
+.round-block.compact .round-goal-text { font-size: 15.5px; line-height: 1.6; }
+@media (min-width: 980px) {
+  .round-block.compact .round-top { padding: 28px 36px; }
+  .round-block.compact .round-headline { font-size: 26px; }
+  .round-block.compact .round-body { font-size: 16px; }
+  .round-block.compact .round-num { font-size: 44px; }
+  .round-block.compact .round-goal { padding: 20px 36px; }
+  .round-block.compact .round-goal-text { font-size: 16px; }
+}
+
+/* ── STORIES TIGHT + bigger headers, no green ── */
+.stories.tight .story { padding: 22px 24px 20px; }
+.stories.tight .story h3 { font-size: 21px; margin-bottom: 8px; }
+.stories.tight .story p { font-size: 15px; line-height: 1.6; }
+.stories.tight .story-result {
+  margin-top: 10px;
+  color: var(--text-dim);
+  font-size: 11px;
+}
+@media (min-width: 980px) {
+  .stories.tight .story { padding: 26px 28px 22px; }
+  .stories.tight .story h3 { font-size: 24px; }
+  .stories.tight .story p { font-size: 15.5px; }
+}
+
+/* ── LOOP ARROW ── */
+.network-flow.loop .loop-arrow {
+  font-size: 16px;
+  color: var(--accent);
+  padding: 0 6px;
 }
