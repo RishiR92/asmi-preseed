@@ -166,6 +166,15 @@ const Index = () => {
               </div>
             </div>
 
+            <div className="founding-member">
+              <span className="fm-role">Founding Team</span>
+              <span className="fm-name">Sibi Venkatesan</span>
+              <span className="fm-tag">
+                CMU PhD · Google &amp; Amazon. Built AI that reconstructs complete understanding
+                from fragmented signals — the core of how Asmi knows you.
+              </span>
+            </div>
+
             <div className="backer-row">
               <div className="backer-label">Previously backed by</div>
               <div className="backer-names">
