@@ -415,7 +415,7 @@ const Index = () => {
               </div>
             </div>
             <div className="market-cell">
-              <div className="market-size market-size--small">wedge</div>
+              <div className="market-size">wedge</div>
               <div className="market-desc" style={{ marginTop: 10 }}>
                 Physical world AI
                 <br />
