@@ -107,11 +107,11 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="fstat">
-                  <div className="fstat-val">500+</div>
+                  <div className="fstat-val">Forbes</div>
                   <div className="fstat-label">
-                    People hired across Asia
+                    30 Under 30 Asia
                     <br />
-                    Forbes 30 Under 30 Asia
+                    #9 in Hurun's U35 India list
                   </div>
                 </div>
               </div>
@@ -256,7 +256,7 @@ const Index = () => {
             </div>
             <div className="why-cell">
               <div className="why-num">03</div>
-              <div className="why-title">Physical world execution is completely unclaimed</div>
+              <div className="why-title">Physical world execution is unclaimed</div>
               <div className="why-body">
                 ChatGPT owns research. Other Assistants are fighting for the digital admin pie.
                 Nobody owns physical world execution.
@@ -378,8 +378,8 @@ const Index = () => {
           {/* What we learned — highlight one-liner */}
           <div className="learned-highlight">
             <span className="learned-tag">What we learned ·</span> The highest-intent moment is{" "}
-            <strong>before</strong> users open anything. Proactive morning calls drive{" "}
-            <strong>40%+ Day-7 retention</strong> vs. the 25% consumer app benchmark.
+            <strong>when users are overwhelmed</strong>. Proactive morning calls drive{" "}
+            <strong>40%+ Day-7 retention</strong> vs. when users have to initiate; 25% consumer app benchmark.
           </div>
         </section>
 
@@ -415,7 +415,7 @@ const Index = () => {
               </div>
             </div>
             <div className="market-cell">
-              <div className="market-size market-size--small">wedge</div>
+              <div className="market-size">wedge</div>
               <div className="market-desc" style={{ marginTop: 10 }}>
                 Physical world AI
                 <br />
