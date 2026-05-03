@@ -378,8 +378,8 @@ const Index = () => {
           {/* What we learned — highlight one-liner */}
           <div className="learned-highlight">
             <span className="learned-tag">What we learned ·</span> The highest-intent moment is{" "}
-            <strong>before</strong> users open anything. Proactive morning calls drive{" "}
-            <strong>40%+ Day-7 retention</strong> vs. the 25% consumer app benchmark.
+            <strong>when users are overwhelmed</strong>. Proactive morning calls drive{" "}
+            <strong>40%+ Day-7 retention</strong> vs. when users have to initiate; 25% consumer app benchmark.
           </div>
         </section>
 
