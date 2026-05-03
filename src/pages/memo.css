@@ -207,6 +207,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .founder-role {
   font-family: 'JetBrains Mono', monospace;
@@ -237,11 +238,10 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
 }
 .fstat {
   background: var(--surface);
-  padding: 12px 20px;
+  padding: 14px 20px 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 72px;
 }
 .fstat-val {
   font-family: 'Instrument Serif', serif;
@@ -249,6 +249,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   color: var(--text);
   line-height: 1.1;
   margin-bottom: 10px;
+  min-height: calc(22px * 1.1 * 2);
 }
 .fstat-val.accent { color: var(--accent); }
 .fstat-val.gold { color: var(--gold); }
