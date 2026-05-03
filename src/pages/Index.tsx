@@ -156,7 +156,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="fstat">
-                <div className="fstat-val green">CMU PhD</div>
+                  <div className="fstat-val">CMU PhD</div>
                   <div className="fstat-label">
                     Best PhD Thesis Award
                     <br />
@@ -179,6 +179,40 @@ const Index = () => {
           </div>
         </section>
 
+        {/* THE ROUND — moved after team */}
+        <section className="section">
+          <div className="section-tag">The round</div>
+          <h2>$300k raised. $25M cap.</h2>
+
+          <div className="round-block compact">
+            <div className="round-top">
+              <div>
+                <div className="round-closed-label">● Pre-seed · Closed</div>
+                <div className="round-headline">
+                  Led by people who've built consumer at the frontier.
+                </div>
+                <div className="round-body">
+                  Firm led by Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders
+                  from top AI labs.
+                </div>
+              </div>
+              <div className="round-num-block">
+                <div className="round-num">$300k</div>
+                <div className="round-cap">
+                  SAFE · $25M cap · No discount
+                </div>
+              </div>
+            </div>
+
+            <div className="round-goal">
+              <div className="round-goal-text">
+                One objective: get to <strong>50,000 active users</strong> and prove the network
+                loop compounds. <strong>US public launch now. India in Q4.</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* THESIS */}
         <section className="section">
           <div className="section-tag">The thesis</div>
@@ -190,7 +224,7 @@ const Index = () => {
           <div className="thesis">
             <p>
               You still make the call. You still sit on hold. You still follow up.{" "}
-              <strong>30% of our waking hours go to life admin</strong> — scheduling, coordinating,
+              <strong>10% of our waking hours go to life admin</strong> — scheduling, coordinating,
               chasing, booking — and no AI has solved it.
             </p>
             <p style={{ marginTop: 20 }}>
@@ -209,27 +243,23 @@ const Index = () => {
               <div className="why-num">01</div>
               <div className="why-title">Voice AI finally works in real time</div>
               <div className="why-body">
-                Sub-75ms latency TTS. Multilingual. Natural enough to pass as human on a phone call.
-                The infrastructure to run a real-world voice agent at scale didn't exist 18 months
-                ago.
+                Sub-75ms latency TTS. Multilingual. Human-like. The infrastructure to run a voice
+                agent at consumer scale didn't exist 18 months ago.
               </div>
             </div>
             <div className="why-cell">
               <div className="why-num">02</div>
               <div className="why-title">iMessage and chat apps are the distribution layer</div>
               <div className="why-body">
-                No app install. No account. A phone number is the entire onboarding. iMessage
-                reaches nearly every iPhone user in the US — the exact demographic that needs a
-                personal assistant most.
+                No app install. No account. An iMessage window is the entire onboarding.
               </div>
             </div>
             <div className="why-cell">
               <div className="why-num">03</div>
               <div className="why-title">Physical world execution is completely unclaimed</div>
               <div className="why-body">
-                ChatGPT owns research. AI Assistants solving digital admin is still WIP. Nobody
-                owns getting things done in the physical world — calling, booking, negotiating. The
-                highest-value job in AI is wide open.
+                ChatGPT owns research. Other Assistants are fighting for the digital admin pie.
+                Nobody owns physical world execution.
               </div>
             </div>
           </div>
@@ -242,66 +272,39 @@ const Index = () => {
           <p className="section-lead">
             Asmi calls you every morning. You talk through what needs doing. Asmi makes the calls —
             to your CPA, your dentist, your plumber, your bank — while you go on with your day.
-            Updates arrive on WhatsApp or iMessage when tasks are done.
+            Updates arrive on iMessage when tasks are done.
           </p>
 
-          <div className="product-truth">
-            {[
-              {
-                tag: "Entry",
-                title: "WhatsApp or iMessage",
-                body: (
-                  <>
-                    No app download. No account creation. A phone number is the entire onboarding.
-                    First interaction completes in under 30 sec followed by first call with Asmi.
-                    This is the zero-friction entry that every consumer product missed.
-                  </>
-                ),
-              },
-              {
-                tag: "Core loop",
-                title: "Pass task → forget → done",
-                body: (
-                  <>
-                    Users mention something on their morning call. Asmi works in the background —
-                    making outbound calls, navigating IVRs, following up — and sends a WhatsApp
-                    update when it's done.{" "}
-                    <strong>The user does nothing between giving the task and receiving the result.</strong>
-                  </>
-                ),
-              },
-              {
-                tag: "Availability",
-                title: "Available where people already are",
-                body: (
-                  <>
-                    Asmi calls you every morning. You can call Asmi any time something comes up.
-                    Or text it on WhatsApp or iMessage mid-day. Same intelligence, same context,
-                    every surface. <strong>The power is being there wherever the moment happens.</strong>
-                  </>
-                ),
-              },
-              {
-                tag: "Language",
-                title: "Speaks your language",
-                body: (
-                  <>
-                    Asmi speaks in the user's native language — English, Italian, Hindi, Spanish.
-                    The Italian mother story: a user in SF has Asmi do twice-daily check-ins with
-                    his elderly mother in Rome, in Italian, tracking her medications. This is the
-                    global wedge.
-                  </>
-                ),
-              },
-            ].map((row) => (
-              <div key={row.tag} className="truth-row">
-                <div className="truth-label">
-                  <div className="truth-tag">{row.tag}</div>
-                  <div className="truth-title">{row.title}</div>
-                </div>
-                <div className="truth-body">{row.body}</div>
+          <div className="product-grid">
+            <div className="product-cell">
+              <div className="product-cell-title">Zero Friction Entry</div>
+              <div className="product-cell-body">
+                An iMessage window is the entire onboarding. First interaction completes in under
+                30 sec followed by first call with Asmi. <strong>No data access required to get
+                Asmi to work.</strong>
               </div>
-            ))}
+            </div>
+            <div className="product-cell">
+              <div className="product-cell-title">Give task → forget → done</div>
+              <div className="product-cell-body">
+                Users mention something on call. Asmi works in the background — making outbound
+                calls, navigating IVRs, following up — and sends an iMessage update when it's done.
+              </div>
+            </div>
+            <div className="product-cell">
+              <div className="product-cell-title">Available where people already are</div>
+              <div className="product-cell-body">
+                Asmi calls you every morning. You can call Asmi any time something comes up. Or
+                text it on iMessage mid-day. Same intelligence, same context, every surface.
+              </div>
+            </div>
+            <div className="product-cell">
+              <div className="product-cell-title">Speaks your language</div>
+              <div className="product-cell-body">
+                Asmi speaks in the user's native language or a mix of them — English, Italian,
+                Hindi, Spanish and 50 others. This is the global wedge.
+              </div>
+            </div>
           </div>
         </section>
 
@@ -310,21 +313,19 @@ const Index = () => {
           <div className="section-tag">Distribution mechanic</div>
           <h2>The product spreads itself.</h2>
           <div className="network">
-            <div className="network-flow">
+            <div className="network-flow loop">
               <div className="nf-step">User gives task</div>
               <div className="nf-arrow">→</div>
               <div className="nf-step">Asmi calls their CPA</div>
               <div className="nf-arrow">→</div>
-              <div className="nf-step">CPA asks "what is this?"</div>
-              <div className="nf-arrow">→</div>
-              <div className="nf-step">CPA becomes a user</div>
+              <div className="nf-step">CPA also wants it</div>
               <div className="nf-arrow">→</div>
               <div className="nf-step">CPA calls their contacts</div>
+              <div className="nf-arrow loop-arrow">↻</div>
             </div>
             <div className="network-stat">
               We spent <strong>$0 on user acquisition</strong>. Growth came entirely
-              from Asmi making calls. Every call Asmi makes is a distribution event. No consumer AI
-              product has unlocked this mechanic.
+              from Asmi making calls. Every call Asmi makes is a distribution event.
             </div>
           </div>
         </section>
@@ -333,7 +334,7 @@ const Index = () => {
         <section className="section">
           <div className="section-tag">Beta proof · this happened</div>
           <h2>Four stories from this week.</h2>
-          <div className="stories">
+          <div className="stories tight">
             <article className="story">
               <div className="story-tag">Moving / logistics</div>
               <h3>Seven suppliers. Best price. Boxes ordered.</h3>
@@ -351,7 +352,7 @@ const Index = () => {
                 User told Asmi about a plumbing emergency. Asmi called five plumbers, negotiated
                 price and timing, and had one confirmed and en route within two hours.
               </p>
-              <div className="story-result">→ Update arrived via WhatsApp: "He's on his way."</div>
+              <div className="story-result">→ Update arrived via iMessage: "He's on his way."</div>
             </article>
             <article className="story">
               <div className="story-tag">Cross-border family care</div>
@@ -373,49 +374,19 @@ const Index = () => {
               <div className="story-result">→ User found out over iMessage an hour later.</div>
             </article>
           </div>
-        </section>
 
-        {/* EARNED SECRET */}
-        <section className="section">
-          <div className="section-tag">What we learned</div>
-          <h2>
-            Everyone assumed users would initiate.
-            <br />
-            <em className="gold-em">They were wrong.</em>
-          </h2>
-          <div className="earned-secret">
-            <div className="earned-secret-label">The earned insight</div>
-            <p>
-              Every AI assistant is designed for the moment you open the app. We discovered the
-              highest-intent moment is <strong>before you open anything</strong> — when you're
-              overwhelmed and life is moving. Users who receive a proactive morning call retain at
-              significantly higher rates than users who initiate. <strong>Eureka!</strong>
-            </p>
-            <div className="earned-secret-data">
-              <div className="esd-cell">
-                <div className="esd-num">40%+</div>
-                <div className="esd-label">
-                  Day-7 retention
-                  <br />
-                  proactive-call users
-                </div>
-              </div>
-              <div className="esd-cell">
-                <div className="esd-num">25%</div>
-                <div className="esd-label">
-                  Consumer app
-                  <br />
-                  average (benchmark)
-                </div>
-              </div>
-            </div>
+          {/* What we learned — highlight one-liner */}
+          <div className="learned-highlight">
+            <span className="learned-tag">What we learned ·</span> The highest-intent moment is{" "}
+            <strong>before</strong> users open anything. Proactive morning calls drive{" "}
+            <strong>40%+ Day-7 retention</strong> vs. the 25% consumer app benchmark.
           </div>
         </section>
 
         {/* MARKET */}
         <section className="section">
           <div className="section-tag">Market</div>
-          <h2>The physical world executor category doesn't exist yet. We're building it.</h2>
+          <h2>AI for physical world chores doesn't exist yet. We're building it.</h2>
           <div className="market-row">
             <div className="market-cell">
               <div className="market-size">$400B</div>
@@ -454,86 +425,6 @@ const Index = () => {
                 ChatGPT, Claude, Perplexity — all stop at the screen. No AI is making autonomous
                 outbound calls on behalf of users. The physical world execution category is wide
                 open.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* MOAT */}
-        <section className="section">
-          <div className="section-tag">Defensibility</div>
-          <h2>Four compounding moats.</h2>
-          <div className="moat-list">
-            {[
-              {
-                n: "01",
-                t: "Phone call as the acquisition channel",
-                b: "Every outbound call Asmi makes on a user's behalf is a free acquisition touchpoint. As the network scales, CAC approaches zero. This mechanic inverts the unit economics of every consumer app.",
-              },
-              {
-                n: "02",
-                t: "Persistent personal context",
-                b: "Asmi builds a deep contextual model of each user across daily calls — preferences, relationships, recurring tasks, communication style. This context cannot be replicated overnight by a competitor who doesn't have the call history.",
-              },
-              {
-                n: "03",
-                t: "Physical world execution is architecturally hard to clone",
-                b: "Negotiations, real-time IVR navigation, executing multi-step tasks over a call in the background, and understanding user conversation style require specialised infrastructure that chat-first competitors cannot bolt on. Every other AI assistant stops at generating text. Asmi stops at a confirmed booking.",
-              },
-              {
-                n: "04",
-                t: "Daily habit with zero app friction",
-                b: "Asmi is not an app — it's a relationship. Users who receive a morning call every day and have tasks handled don't churn. Day-7 retention in the first cohort exceeds 40%, against a consumer app average of 25%.",
-              },
-            ].map((m) => (
-              <div key={m.n} className="moat-item">
-                <div className="moat-num">{m.n}</div>
-                <div>
-                  <div className="moat-title">{m.t}</div>
-                  <div className="moat-body">{m.b}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* THE ROUND */}
-        <section className="section">
-          <div className="section-tag">The round</div>
-          <h2>$300k raised. $25M cap.</h2>
-
-          <div className="round-block">
-            <div className="round-top">
-              <div>
-                <div className="round-closed-label">● Pre-seed · Closed</div>
-                <div className="round-headline">
-                  Led by people who've built
-                  <br />
-                  consumer at the frontier.
-                </div>
-                <div className="round-body">
-                  Firm led by Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders
-                  from top AI labs. Signal from people who know what great AI products and consumer
-                  distribution actually looks like.
-                </div>
-              </div>
-              <div className="round-num-block">
-                <div className="round-num">$300k</div>
-                <div className="round-cap">
-                  Closed · SAFE
-                  <br />
-                  $25M val cap
-                  <br />
-                  No discount
-                </div>
-              </div>
-            </div>
-
-            <div className="round-goal">
-              <div className="round-goal-text">
-                One objective: get to <strong>50,000 active users</strong> and prove the network
-                loop compounds at scale. That's the signal that unlocks the seed.{" "}
-                <strong>US public launch now. India in Q4.</strong>
               </div>
             </div>
           </div>
