@@ -249,6 +249,7 @@ html, body, #root { background: #0A0A0A; margin: 0; padding: 0; max-width: none;
   color: var(--text);
   line-height: 1.1;
   margin-bottom: 10px;
+  min-height: calc(22px * 1.1 * 2);
 }
 .fstat-val.accent { color: var(--accent); }
 .fstat-val.gold { color: var(--gold); }
