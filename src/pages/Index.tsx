@@ -166,6 +166,15 @@ const Index = () => {
               </div>
             </div>
 
+            <div className="founding-member">
+              <span className="fm-role">Founding Team</span>
+              <span className="fm-name">Sibi Venkatesan</span>
+              <span className="fm-tag">
+                CMU PhD · Google &amp; Amazon. Built AI that reconstructs complete understanding
+                from fragmented signals — the core of how Asmi knows you.
+              </span>
+            </div>
+
             <div className="backer-row">
               <div className="backer-label">Previously backed by</div>
               <div className="backer-names">
@@ -192,8 +201,9 @@ const Index = () => {
                   Led by people who've built consumer at the frontier.
                 </div>
                 <div className="round-body">
-                  Firm led by Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside founders
-                  from top AI labs.
+                  Firm led by Jack Brody (CPO at Suno AI, former CPO at Snap) — alongside Devi
+                  Parikh (Founder Yutori, GenAI Head at Meta) and Shubho (Founder Axiom Math,
+                  PyTorch architect).
                 </div>
               </div>
               <div className="round-num-block">
