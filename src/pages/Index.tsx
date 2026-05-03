@@ -107,11 +107,11 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="fstat">
-                  <div className="fstat-val">500+</div>
+                  <div className="fstat-val">Forbes</div>
                   <div className="fstat-label">
-                    People hired across Asia
+                    30 Under 30 Asia
                     <br />
-                    Forbes 30 Under 30 Asia
+                    #9 in Hurun's U35 India list
                   </div>
                 </div>
               </div>
